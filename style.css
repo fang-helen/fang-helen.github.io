@@ -14,14 +14,28 @@
 }
 
 html, body {
-  background-color: #333;
+  background-color: #444;
   color: white;
   font: 100%/1.6 "Open-Sans-Light", "Trebuchet MS", Helvetica, sans-serif;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
+.section {
+  height: 80vh;
+  padding: 5vh;
+}
+
+.section-header {
+  height: 15vh;
+  font-size: max(3.5em, 8vh);
+  margin-left: 5vw;
+}
+
+.section-content {
+  font-size: 3vh;
+  height: 65vh;
+}
 
 /* INTRO */
 #intro {
@@ -29,14 +43,13 @@ html, body {
   /* background-color: #999; */
   display: flex;
   justify-content: center;
-  height: 90vh;
 }
 
 #intro-content {
   background-color: #666;
   display: flex;
   height: 60vh;
-  padding: 5vh;
+  padding: 7vh;
   width: 60vw;
 }
 
@@ -51,11 +64,11 @@ html, body {
 
 #pfp {
   border-radius: 50%;
-  height: 48vh;
+  height: 44vh;
   max-height: 500px;
   max-width: 500px;
   object-fit: cover;
-  width: 48vh;
+  width: 44vh;
 }
 
 #contact-links {
@@ -97,7 +110,38 @@ html, body {
   margin: 0 3vh 2vh 8vh;
 }
 
+/* FIRST SECTION */
+#aboutme {
+  background-color: #777;
+  height: 75vh;
+}
 
+#aboutme-content {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 5vw;
+}
+
+#aboutme-header {
+  align-self: left;
+  margin: 0;
+  margin-bottom: max(2vh, 20px);
+}
+
+#aboutme-blurb {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0 max(5vw, 50px);
+}
+
+#skills-tech {
+  background-color: #ccc;
+  height: 100%;
+  margin-left: 5vh;
+  min-width: max(350px, 25vw);
+  width: 60vh;
+}
 
 #showScroll {
   height: 60vh;
