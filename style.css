@@ -13,6 +13,12 @@
   src: url(font/Qwigley-Regular.ttf);
 }
 
+/* COLORS:
+  #444 -> #020c15
+  #666 -> #465056
+  #777 -> #67737a
+*/
+
 html, body {
   background-color: #444;
   color: white;
