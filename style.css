@@ -1,11 +1,24 @@
+@font-face {
+  font-family: Open-Sans-Light;
+  src: url(font/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: Open-Sans-Regular;
+  src: url(font/OpenSans-Regular.ttf);
+}
+
 html, body {
   background-color: #333;
   color: white;
-  height: 100vh;
+  font: 100%/1.6 "Open-Sans-Light", "Trebuchet MS", Helvetica, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
+
+/* INTRO */
 #intro {
   align-items: center;
   background-color: #999;
@@ -16,21 +29,69 @@ html, body {
 
 #intro-content {
   background-color: #666;
-  height: 50vh;
+  display: flex;
+  height: 60vh;
+  padding: 5vh;
   width: 60vw;
 }
 
-#showScroll {
-  height: 60vh;
+#intro-left {
+  align-items: center;
+  align-self: left;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: center;
+}
+
+#pfp {
+  border-radius: 50%;
+  height: 48vh;
+  max-height: 500px;
+  max-width: 500px;
+  object-fit: cover;
+  width: 48vh;
+}
+
+#contact-links {
+  height: 4vh;
+  min-height: 40px;
+  padding: 4vh;
 }
 
 .link-icon {
-  height: 5vh;
-  width: 5vh;
+  height: 100%;
   display: inline-block;
 }
 
 .link-icon img {
   height: 100%;
+  margin: 0 .8vh;
   object-fit: contain;
+}
+
+/* end left intro, begin right intro */
+#intro-right {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: center;
+}
+
+#hello {
+  font-size: 20vh;
+  text-align: center;
+}
+
+#blurb {
+  font-size: 3.5vh;
+  margin: 2vh 3vh 2vh 8vh;
+}
+
+
+
+#showScroll {
+  height: 60vh;
 }
