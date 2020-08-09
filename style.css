@@ -16,7 +16,7 @@ html, body {
 
 #intro-content {
   background-color: #666;
-  height: 50vh;
+  height: 60vh;
   width: 60vw;
 }
 
@@ -24,13 +24,33 @@ html, body {
   height: 60vh;
 }
 
+#intro-left {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: center;
+}
+
+#pfp {
+  border-radius: 50%;
+  height: 35vh;
+  object-fit: cover;
+  width: 35vh;
+}
+
+#contact-links {
+  height: 4vh;
+  padding: 4vh;
+}
+
 .link-icon {
-  height: 5vh;
-  width: 5vh;
+  height: 100%;
   display: inline-block;
 }
 
 .link-icon img {
   height: 100%;
+  margin: 0 .4vh;
   object-fit: contain;
 }
