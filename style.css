@@ -28,7 +28,6 @@ html, body {
 }
 
 .section {
-  height: 80vh;
   padding: 5vh;
 }
 
@@ -43,11 +42,15 @@ html, body {
   height: 65vh;
 }
 
+.accent {
+  color: #ffd900;
+}
+
 /* INTRO */
 #intro {
   align-items: center;
-  /* background-color: #999; */
   display: flex;
+  height: 80vh;
   justify-content: center;
 }
 
@@ -55,8 +58,18 @@ html, body {
   background-color: #465056;
   display: flex;
   height: 60vh;
+  bottom: 60vh;
+  opacity: 0%;
   padding: 7vh;
+  position: absolute;
+  transition: bottom 1s, opacity 1s;
+  transition-delay: .5s;
   width: 60vw;
+}
+
+#intro-content.after-load {
+  bottom: 18vh;
+  opacity: 100%;
 }
 
 #intro-left {
