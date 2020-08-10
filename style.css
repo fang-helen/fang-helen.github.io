@@ -20,7 +20,7 @@
 */
 
 html, body {
-  background-color: #444;
+  background-color: #020c15;
   color: white;
   font: 100%/1.6 "Open-Sans-Light", "Trebuchet MS", Helvetica, sans-serif;
   margin: 0;
@@ -52,7 +52,7 @@ html, body {
 }
 
 #intro-content {
-  background-color: #666;
+  background-color: #465056;
   display: flex;
   height: 60vh;
   padding: 7vh;
@@ -118,7 +118,7 @@ html, body {
 
 /* FIRST SECTION */
 #aboutme {
-  background-color: #777;
+  background-color: #67737a;
   height: 75vh;
 }
 
