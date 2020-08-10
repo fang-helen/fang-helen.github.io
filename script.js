@@ -2,7 +2,7 @@ const color = "020c15";
 
 function load() {
   // trigger animation
-  document.getElementById('intro-content').className = 'after-load';
+  document.getElementById('intro-content').classList.add('after-load');
 
   window.addEventListener('scroll', function() {
       scrollActions();
@@ -19,6 +19,12 @@ function load() {
 function scrollActions() {
   // scroll position
   const offset = window.pageYOffset;
+
+  // show sections if needed
+  const aboutmeThreshold = document.getElementById('aboutme-content').clientHeight;
+  if(offset >= aboutmeThreshold * .1) {
+    document.getElementById('aboutme-content').classList.add('after-load');
+  }
 
   // update color while scrolling
   const limit = document.body.style.height - window.innerHeight;
