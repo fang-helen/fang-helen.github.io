@@ -3,6 +3,7 @@ const color = "041625";
 /** Actions to take when the page loads. */
 function load() {
   document.getElementById('intro-content').classList.add('after-load');
+  document.getElementById('intro-decor').classList.add('after-load');
 
   window.addEventListener('scroll', function() {
       scrollActions();
