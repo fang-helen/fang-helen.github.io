@@ -1,20 +1,12 @@
-const color = "020c15";
+const color = "041625";
 
 /** Actions to take when the page loads. */
 function load() {
-  // trigger animation of intro section
   document.getElementById('intro-content').classList.add('after-load');
 
   window.addEventListener('scroll', function() {
       scrollActions();
     });
-
-  // get position of element (test)
-  const rect = document.getElementById('showTop').getBoundingClientRect();
-  var left = rect.left + window.scrollX;
-  var top = rect.top + window.scrollY;
-
-  document.getElementById('showTop').innerText = top;
 }
 
 /** Eventlistener function that triggers when user scrolls. */
@@ -32,11 +24,11 @@ function scrollActions() {
       r = (startColor & 0xFF0000) >>> 16;
   const delta = offset/limit;
   b = Math.floor(b * delta) + b;
-  g += Math.floor(g * delta) + g;
-  r += Math.floor(r * delta) + r;
+  g = Math.floor(g * delta) + g;
+  r = Math.floor(r * delta) + r;
   
   const result = "rgb(" + [r, g, b].join(",") + ")";
-  // document.body.style.backgroundColor = result;
+  document.body.style.backgroundColor = result;
 
   document.getElementById('showScroll').innerHTML = offset + 'px  ' + result;
 
