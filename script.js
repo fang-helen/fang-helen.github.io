@@ -41,7 +41,7 @@ function scrollActions() {
   r = Math.floor(r * delta) + r;
   
   const result = "rgb(" + [r, g, b].join(",") + ")";
-  document.body.style.backgroundColor = result;
+  // document.body.style.backgroundColor = result;
 
   document.getElementById('showScroll').innerHTML = offset + 'px  ' + result;
 }
