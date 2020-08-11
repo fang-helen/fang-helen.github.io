@@ -57,6 +57,7 @@ html, body {
   justify-content: flex-end;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 #header-items {
@@ -69,7 +70,6 @@ html, body {
   transition: width 2s ease;
   white-space: nowrap;
   width: 0;
-  z-index: 10;
 }
 
 #header-items.after-load {
