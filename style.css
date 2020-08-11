@@ -138,9 +138,9 @@ html, body {
 }
 
 #contact-links {
-  height: 4vh;
+  height: 4.5vh;
   min-height: 40px;
-  padding: 4vh;
+  padding: 2vh;
 }
 
 .link-icon {
@@ -151,7 +151,8 @@ html, body {
 .link-icon img {
   background-color: #36455c;
   height: 100%;
-  margin: 0 .8vh;
+  margin: 0 1vh;
+  width: 4.5vh;
   object-fit: contain;
 }
 
