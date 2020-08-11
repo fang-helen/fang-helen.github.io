@@ -49,21 +49,42 @@ html, body {
 }
 
 #header {
-  align-items: center;
   background-color: #041625ab;
   display: flex;
-  font-size: max(2vh, 12px);
   flex-flow: row nowrap;
+  font-size: max(2vh, 12px);
   height: 10vh;
   justify-content: flex-end;
   position: fixed;
   width: 100%;
+}
+
+#header-items {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: flex-end;
+  overflow: hidden;
+  transition: width 2s ease;
+  white-space: nowrap;
+  width: 0;
   z-index: 10;
 }
 
-#header a {
+#header-items.after-load {
+  width: 100%;
+}
+
+.header-item {
   cursor: pointer;
+  opacity: 0%;
   padding: 1.5vw;
+  transition: opacity .5s ease;
+}
+
+.header-item.after-load {
+  opacity: 100%;
 }
 
 #header a:link, #header a:visited {

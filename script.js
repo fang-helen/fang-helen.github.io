@@ -1,12 +1,14 @@
 const color = "041625";
+const introItems = ['header-items', 'intro-content', 'intro-decor'];
 const aboutMeItems = ['aboutme-decor-light', 'aboutme-decor-dark'];
 
 /** Actions to take when the page loads. */
 function load() {
-  document.getElementById('intro-content').classList.add('after-load');
-  document.getElementById('intro-decor').classList.add('after-load');
+  transitionDelays('header-item');
+  transitionDelays('skill');
 
-  loadSkills();
+  loadItemsById(introItems);
+  loadItemsByClass('header-item');
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
 
   window.addEventListener('scroll', function() {
@@ -14,11 +16,11 @@ function load() {
     });
 }
 
-/** Applies staggered transition delay to skill elements. */
-function loadSkills() {
-  const skills = document.getElementsByClassName('skill');
-  for(var i = 0; i < skills.length; i ++) {
-    skills[i].style.transitionDelay = 0.1 * (i + 1) + 's';
+/** Applies staggered transition delay to elements of certain class. */
+function transitionDelays(classname) {
+  const items = document.getElementsByClassName(classname);
+  for(var i = 0; i < items.length; i ++) {
+    items[i].style.transitionDelay = 0.1 * (i + 1) + 's';
   }
 }
 
