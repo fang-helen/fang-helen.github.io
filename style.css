@@ -139,7 +139,7 @@ html, body {
 
 #contact-links {
   height: 4.5vh;
-  min-height: 40px;
+  min-height: 25px;
   padding: 2vh;
 }
 
@@ -152,6 +152,7 @@ html, body {
   background-color: #36455c;
   height: 100%;
   margin: 0 1vh;
+  min-width: 25px;
   width: 4.5vh;
   object-fit: contain;
 }
@@ -197,9 +198,9 @@ html, body {
   opacity: 10%;
 }
 
-/* FIRST SECTION */
+/* ABOUT ME SECTION */
 #aboutme {
-  background-color: #516583;
+  background-color: #516583be;
   height: 80vh;
   overflow: hidden;
   width: 100vw;
@@ -295,6 +296,43 @@ html, body {
   opacity: 15%;
 }
 
+/* EXPERIENCE SECTION */
+#experience {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 80vh;
+}
+
+#exp-content {
+  background-color: #556d91;
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 55vh;
+  width: 45%;
+}
+
+#exp-tabs {
+  background-color: rgba(255, 255, 255, 0.144);
+  flex-grow: 0;
+  font-size: max(2vh, 12px);
+  min-width: 10vh;
+  width: 7vw;
+}
+
+.tab {
+  align-items: center;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.exp-tab-content {
+  flex-grow: 1;
+  padding: 10vh;
+}
 
 #showScroll {
   height: 60vh;
