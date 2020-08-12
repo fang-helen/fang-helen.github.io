@@ -85,3 +85,9 @@ function loadItemsByClass(subClassname) {
     skills[i].classList.add('after-load');
   }
 }
+
+var selected = 0;
+/** Toggles selected item from experience section. */
+function toggleSelected(index) {
+
+}

@@ -246,7 +246,7 @@ html, body {
 }
 
 .skills-section {
-  font-family: 'Open-Sans-Regular';
+  font-family: 'Open-Sans-Light';
   width: 100%;
 }
 
@@ -310,28 +310,92 @@ html, body {
   display: flex;
   flex-flow: row nowrap;
   min-width: 55vh;
-  width: 45%;
+  width: 50%;
 }
 
 #exp-tabs {
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: rgba(0, 0, 0, 0.144);
+  display: flex;
+  flex-flow: column nowrap;
   flex-grow: 0;
   font-size: max(2vh, 12px);
+  justify-content: flex-start;
   min-width: 10vh;
-  width: 7vw;
+  text-align: center;
+  width: 8vw;
 }
 
 .tab {
   align-items: center;
-  border-bottom: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 1px solid white;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   padding: 1em 0;
 }
 
-.exp-tab-content {
+.tab.selected {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#empty-tab {
+  background-color: transparent;
+  cursor: default;
   flex-grow: 1;
-  padding: 10vh;
+}
+
+.exp-tab-content {
+  padding: 7vh;
+  width: calc(100% - 14vh - max(10vh, 8vw));
+}
+
+.exp-tab-item {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+.exp-tab-item.selected {
+  display: block;
+}
+
+.exp-tab-header {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  height: 10vh;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exp-tab-company {
+  color: #ffd900;
+}
+
+.exp-tab-dates {
+  flex-grow: 0;
+  font-size: max(2vh, 12px);
+}
+
+.exp-tab-content ul {
+  margin: 0;
+}
+
+.exp-tab-content li {
+  font-size: max(2.2vh, 12px);
+  margin: .5em 0;
+}
+
+.inline-link {
+  display: inline-block;
+  height: 1em;
+  margin: 0 .3em;
+  width: 1em;
+}
+
+.inline-link img {
+  height: 100%;
+  object-fit: contain;
 }
 
 #showScroll {

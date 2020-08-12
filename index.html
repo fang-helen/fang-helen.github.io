@@ -77,13 +77,78 @@
     <div id="experience" class="section">
       <div id="exp-content" class="section-content">
         <div id="exp-tabs">
-          <div class="tab">Google</div>
-          <div class="tab">Sanger</div>
-          <div class="tab">Travis County<br>Tax Office</div>
+          <div class="tab selected" onclick="toggleSelected(0)">Google</div>
+          <div class="tab" onclick="toggleSelected(1)">Sanger<br>Learning Center</div>
+          <div class="tab" onclick="toggleSelected(2)">Travis County<br>Tax Office</div>
+          <div id="empty-tab" class="tab"></div>
         </div>
-        <div class="exp-tab-content">Google STEP Intern</div>
+        <div class="exp-tab-content">
+
+          <!-- resume item -->
+          <div class="exp-tab-item selected">
+            <div class="exp-tab-header">
+              <div class="exp-tab-title">STEP Intern<span class="exp-tab-company"> @ Google</span></div>
+              <div class="exp-tab-dates">May 2020 - Aug 2020</div>
+            </div>
+            <ul>
+              <li>Used 
+                    <span class="accent">HTML</span>, 
+                    <span class="accent">CSS</span>, 
+                    <span class="accent">Javascript</span>, 
+                    <span class="accent">Java</span> servlets, 
+                    and <span class="accent">Maven</span> to build full-stack web applications.
+                <ul>
+                  <li>Implemented an interactive portfolio page where visitors can add comments and 
+                    translate content. 
+                    <a class="inline-link" href="https://github.com/fang-helen/step-portfolio" target="_blank">
+                      <img src="images/git.png" alt="Github Source"/>
+                    </a></li>
+                  <li>Designed and created a web application to search for, save, and create events 
+                      within users’ communities.
+                      <a class="inline-link" href="https://github.com/fang-helen/unitebystep" target="_blank">
+                        <img src="images/git.png" alt="Github Source"/>
+                      </a></li>
+                </ul>
+                </li>
+              <li>Engaged in an <span class="accent">end-to-end software development cycle</span>, including 
+                  creating design docs, writing code, mocking objects and writing unit tests, and completing code reviews.</li>
+            </ul>
+          </div>
+
+          <!-- resume item -->
+          <div class="exp-tab-item">
+            <div class="exp-tab-header">
+              <div class="exp-tab-title">Tutor<span class="exp-tab-company"> @ Sanger Learning Center</span></div>
+              <div class="exp-tab-dates">Jan 2020 - May 2020</div>
+            </div>
+            <ul>
+              <li>Worked for 10 hours a week, in both an appointment-based and drop-in context.</li>
+              <li>Tutor for  
+                    <span class="accent">data structures</span>, 
+                    <span class="accent">linear algebra</span>, and
+                    <span class="accent">calculus</span> in a one-on-one setting.
+                </li>
+            </ul>
+          </div>
+          
+          <!-- resume item -->
+          <div class="exp-tab-item">
+            <div class="exp-tab-header">
+              <div class="exp-tab-title">Media Intern<span class="exp-tab-company"> @ Travis County Tax Office</span></div>
+              <div class="exp-tab-dates">Jul 2019 - Aug 2019</div>
+            </div>
+            <ul>
+              <li><span class="accent">Designed graphics and posters</span> using Medibang Paint Pro and Microsoft Publisher.</li>
+              <li>Created and updated PSA videos, with topics ranging from voter registration to vehicle titling.</li>
+              <li><span class="accent">Translated</span> each PSA to <span class="accent">Chinese</span>, improving information 
+                  accessibility to an important demographic.</li>
+            </ul>
+          </div>
+
+
+        </div>
       </div>
-      <div id="exp-header" class="section-header">Experience</div>
+      <div id="exp-header" class="section-header">Work<br>Experience</div>
     </div>
 
     <div id="showScroll">scroll</div>
