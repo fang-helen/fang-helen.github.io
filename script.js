@@ -11,6 +11,8 @@ function load() {
   loadItemsByClass('header-item');
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
 
+  toggleSelected(0);
+
   window.addEventListener('scroll', function() {
       scrollActions();
     });
@@ -86,8 +88,23 @@ function loadItemsByClass(subClassname) {
   }
 }
 
-var selected = 0;
+var selected = -1;
 /** Toggles selected item from experience section. */
 function toggleSelected(index) {
+  const tabItems = document.getElementsByClassName('exp-tab-item');
+  const tabs = document.getElementsByClassName('tab');
 
+  if(index == null || index < 0 || index >= tabItems.length) {
+    return;
+  }
+
+  if(selected != null && selected >= 0 && selected < tabItems.length) {
+    tabItems[selected].classList.remove('selected');
+    tabs[selected].classList.remove('selected');
+  }
+
+  tabItems[index].classList.add('selected');
+  tabs[index].classList.add('selected');
+
+  selected = index;
 }
