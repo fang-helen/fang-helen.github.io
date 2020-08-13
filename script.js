@@ -7,12 +7,11 @@ const experienceItems = ['exp-content', 'exp-header', 'exp-decor'];
 function load() {
   transitionDelays('header-item');
   transitionDelays('skill');
-  transitionDelays('tab');
 
   loadItemsById(introItems);
   loadItemsByClass('header-item');
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
-  checkLoadElement('experience', 'tab', experienceItems);
+  checkLoadElement('experience', null, experienceItems);
 
   toggleSelected(0);
 

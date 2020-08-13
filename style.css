@@ -332,6 +332,7 @@ a:link.accent, a:visited.accent {
   min-width: 55vh;
   opacity: 0%;
   transition: margin-top 1s, opacity 1s ease;
+  transition-delay: .3s;
   width: 50%;
   z-index: 2;
 }
@@ -362,8 +363,6 @@ a:link.accent, a:visited.accent {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-top: 10vh;
-  opacity: 0%;
   padding: 1em 0;
   transition: margin-top .5s, opacity .5s ease;
 }
@@ -371,11 +370,6 @@ a:link.accent, a:visited.accent {
 .tab.selected {
   background-color: rgba(255, 255, 255, 0.35);
   border-left-width: 3px;
-}
-
-.tab.after-load {
-  margin-top: 0;
-  opacity: 100%;
 }
 
 #empty-tab {
