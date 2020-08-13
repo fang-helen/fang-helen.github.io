@@ -362,12 +362,20 @@ a:link.accent, a:visited.accent {
   cursor: pointer;
   display: flex;
   justify-content: center;
+  margin-top: 10vh;
+  opacity: 0%;
   padding: 1em 0;
+  transition: margin-top .5s, opacity .5s ease;
 }
 
 .tab.selected {
   background-color: rgba(255, 255, 255, 0.35);
   border-left-width: 3px;
+}
+
+.tab.after-load {
+  margin-top: 0;
+  opacity: 100%;
 }
 
 #empty-tab {
