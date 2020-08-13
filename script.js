@@ -1,6 +1,7 @@
 const color = "041625";
 const introItems = ['header-items', 'intro-content', 'intro-decor'];
 const aboutMeItems = ['aboutme-decor-light', 'aboutme-decor-dark'];
+const experienceItems = ['exp-content', 'exp-header', 'exp-decor'];
 
 /** Actions to take when the page loads. */
 function load() {
@@ -10,6 +11,7 @@ function load() {
   loadItemsById(introItems);
   loadItemsByClass('header-item');
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
+  checkLoadElement('experience', 'tab', experienceItems);
 
   toggleSelected(0);
 
@@ -28,26 +30,8 @@ function transitionDelays(classname) {
 
 /** Eventlistener function that triggers when user scrolls. */
 function scrollActions() {
-  // scroll position
-  const offset = window.pageYOffset;
-
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
-
-  // update color while scrolling (test)
-  const limit = document.body.style.height - window.innerHeight;
-  const startColor = parseInt(color, 16);
-  var b = startColor & 0xFF,
-      g = (startColor & 0xFF00) >>> 8,
-      r = (startColor & 0xFF0000) >>> 16;
-  const delta = offset/limit;
-  b = Math.floor(b * delta) + b;
-  g = Math.floor(g * delta) + g;
-  r = Math.floor(r * delta) + r;
-  
-  const result = "rgb(" + [r, g, b].join(",") + ")";
-  // document.body.style.backgroundColor = result;
-
-  // document.getElementById('showScroll').innerHTML = offset + 'px  ' + result;
+  checkLoadElement('experience', 'tab', experienceItems);
 }
 
 /** 
@@ -57,8 +41,8 @@ function scrollActions() {
  * @param {string} subClassName The class name of any sub-elements to load;
  */
 function checkLoadElement(elemName, subclassName, idList) {
-  const rect = document.getElementById(elemName).getBoundingClientRect();
-  if(window.innerHeight - rect.top > window.innerHeight * .1) {
+  const top = document.getElementById(elemName).getBoundingClientRect().top;
+  if(window.innerHeight - top > window.innerHeight * .2) {
     document.getElementById(elemName).classList.add('after-load');
 
     // load any subelements also

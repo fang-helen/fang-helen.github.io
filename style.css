@@ -49,7 +49,7 @@ html, body {
 }
 
 #header {
-  background-color: #041625ab;
+  background-color: #041625b2;
   display: flex;
   flex-flow: row nowrap;
   font-size: max(2vh, 12px);
@@ -301,7 +301,7 @@ a:link.accent, a:visited.accent {
 
 #aboutme-decor-dark.after-load {
   left: 63%;
-  opacity: 10%;
+  opacity: 20%;
 }
 
 /* EXPERIENCE SECTION */
@@ -313,17 +313,37 @@ a:link.accent, a:visited.accent {
   height: 90vh;
 }
 
+#exp-header {
+  margin-bottom: 50%;
+  opacity: 0%;
+  transition: margin-bottom 1s, opacity 1s ease;
+}
+
+#exp-header.after-load {
+  margin-bottom: 0;
+  opacity: 100%;
+}
+
 #exp-content {
   background-color: #36455c;
   display: flex;
   flex-flow: row nowrap;
+  margin-top: 80vh;
   min-width: 55vh;
+  opacity: 0%;
+  transition: margin-top 1s, opacity 1s ease;
   width: 50%;
   z-index: 2;
 }
 
+#exp-content.after-load {
+  margin-top: 0;
+  opacity: 100%;
+}
+
 #exp-tabs {
-  background-color: rgba(0, 0, 0, 0.575);
+  background-color: #041625b2;
+  box-shadow: .3vw 0 .3vw rgba(0, 0, 0, 0.5);
   display: flex;
   flex-flow: column nowrap;
   flex-grow: 0;
@@ -376,7 +396,7 @@ a:link.accent, a:visited.accent {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  height: 10vh;
+  font-size: max(3vh, 18px);
   justify-content: space-between;
   width: 100%;
 }
@@ -414,12 +434,18 @@ a:link.accent, a:visited.accent {
 #exp-decor {
   background-color: white;
   height: 65%;
-  left: 10%;
-  opacity: 10%;
+  left: -10%;
+  opacity: 0%;
   position: absolute;
-  margin-top: 5vh;
+  margin-top: 7vh;
+  transition: left 1s, opacity 1s ease;
   width: max(50%, 55vh);
   z-index: 0;
+}
+
+#exp-decor.after-load {
+  left: 10%;
+  opacity: 10%;
 }
 
 #showScroll {
