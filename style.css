@@ -87,8 +87,13 @@ html, body {
   opacity: 100%;
 }
 
-#header a:link, #header a:visited {
+a:link, a:visited {
   color: white;
+  text-decoration: none;
+}
+
+a:link.accent, a:visited.accent {
+  color: #ffd900;
   text-decoration: none;
 }
 
@@ -201,7 +206,7 @@ html, body {
 
 /* ABOUT ME SECTION */
 #aboutme {
-  background-color: #516583be;
+  background-color: #36455c;
   height: 80vh;
   overflow: hidden;
   width: 100vw;
@@ -278,7 +283,7 @@ html, body {
 }
 
 #aboutme-decor-light.after-load {
-  opacity: 15%;
+  opacity: 10%;
   top: 100%;
 }
 
@@ -296,7 +301,7 @@ html, body {
 
 #aboutme-decor-dark.after-load {
   left: 63%;
-  opacity: 15%;
+  opacity: 10%;
 }
 
 /* EXPERIENCE SECTION */
@@ -305,19 +310,20 @@ html, body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
 }
 
 #exp-content {
-  background-color: #556d91;
+  background-color: #36455c;
   display: flex;
   flex-flow: row nowrap;
   min-width: 55vh;
   width: 50%;
+  z-index: 2;
 }
 
 #exp-tabs {
-  background-color: rgba(0, 0, 0, 0.144);
+  background-color: rgba(0, 0, 0, 0.575);
   display: flex;
   flex-flow: column nowrap;
   flex-grow: 0;
@@ -326,6 +332,7 @@ html, body {
   min-width: 10vh;
   text-align: center;
   width: 8vw;
+  z-index: 2;
 }
 
 .tab {
@@ -352,6 +359,7 @@ html, body {
 .exp-tab-content {
   padding: 7vh;
   width: calc(100% - 14vh - max(10vh, 8vw));
+  z-index: 2;
 }
 
 .exp-tab-item {
@@ -401,6 +409,17 @@ html, body {
 .inline-link img {
   height: 100%;
   object-fit: contain;
+}
+
+#exp-decor {
+  background-color: white;
+  height: 65%;
+  left: 10%;
+  opacity: 10%;
+  position: absolute;
+  margin-top: 5vh;
+  width: max(50%, 55vh);
+  z-index: 0;
 }
 
 #showScroll {

@@ -47,7 +47,7 @@ function scrollActions() {
   const result = "rgb(" + [r, g, b].join(",") + ")";
   // document.body.style.backgroundColor = result;
 
-  document.getElementById('showScroll').innerHTML = offset + 'px  ' + result;
+  // document.getElementById('showScroll').innerHTML = offset + 'px  ' + result;
 }
 
 /** 
@@ -89,16 +89,19 @@ function loadItemsByClass(subClassname) {
 }
 
 var selected = -1;
+
 /** Toggles selected item from experience section. */
 function toggleSelected(index) {
   const tabItems = document.getElementsByClassName('exp-tab-item');
   const tabs = document.getElementsByClassName('tab');
 
-  if(index == null || index < 0 || index >= tabItems.length) {
+  var limit = Math.min(tabItems.length, tabs.length);
+
+  if(index == null || index < 0 || index >= limit) {
     return;
   }
 
-  if(selected != null && selected >= 0 && selected < tabItems.length) {
+  if(selected != null && selected >= 0 && selected < limit) {
     tabItems[selected].classList.remove('selected');
     tabs[selected].classList.remove('selected');
   }
