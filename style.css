@@ -314,7 +314,7 @@ a:link.accent, a:visited.accent {
 }
 
 #exp-header {
-  margin-bottom: 50%;
+  margin-bottom: 80%;
   opacity: 0%;
   transition: margin-bottom 1s, opacity 1s ease;
 }
