@@ -5,18 +5,25 @@ const experienceItems = ['exp-content', 'exp-header', 'exp-decor'];
 
 /** Actions to take when the page loads. */
 function load() {
+  // apply transition items
   transitionDelays('header-item');
   transitionDelays('skill');
 
+  // check for item loading
   loadItemsById(introItems);
   loadItemsByClass('header-item');
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
   checkLoadElement('experience', null, experienceItems);
 
+  // select the first item in work experience list
   toggleSelected(0);
 
   window.addEventListener('scroll', function() {
       scrollActions();
+    });
+
+  window.addEventListener('resize', function() {
+      resizeActions();
     });
 }
 
@@ -28,10 +35,19 @@ function transitionDelays(classname) {
   }
 }
 
+function projectOverlays() {
+  const overlays = document.getElementsByClassName('project-overlay');
+}
+
 /** Eventlistener function that triggers when user scrolls. */
 function scrollActions() {
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
   checkLoadElement('experience', 'tab', experienceItems);
+}
+
+/** Eventlister function that triggers when user resizes window. */
+function resizeActions() {
+
 }
 
 /** 
