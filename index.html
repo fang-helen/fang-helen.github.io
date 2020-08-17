@@ -3,22 +3,24 @@
   <head>
     <meta charset = "UTF-8">
     <title>Helen Fang</title>
-    <link rel="stylesheet" href = "style.css">
+    <link id="style" rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body onload="load()">
     <div id="header">
+      <img src="files/menu.png" id ="menu-toggle" onclick="toggleMenu()" alt="Menu"/>
       <div id="header-items">
         <a href="#intro" class="header-item">Home</a>
         <a href="#aboutme" class="header-item">About Me</a>
         <a href="#experience" class="header-item">Experience</a>
-        <a class="header-item">Contact</a>
+        <a href="#contact" class="header-item">Contact</a>
         <a href="files/Resume.pdf" target="_blank" class="accent header-item">Resume</a>
       </div>
     </div>
     <div id="intro" class="section">
       <div id="intro-content">
         <div id="intro-left">
+          <div id="hello">Hello!</div>
           <!-- height should be 50vh -->
           <img src="files/pfp.jpg" id ="pfp" alt="a picture of me!"/>
           <div id="contact-links">
@@ -34,7 +36,6 @@
           </div>
         </div>
         <div id="intro-right">
-          <div id="hello">Hello!</div>
           <div id="intro-decor"></div>
           <div id="blurb">My name is <span class="accent">Helen Fang</span>. I am a computer science student at 
             the University of Texas at Austin and aspiring software engineer.</div>

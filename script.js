@@ -5,8 +5,9 @@ const experienceItems = ['exp-content', 'exp-header', 'exp-decor'];
 
 /** Actions to take when the page loads. */
 function load() {
+  determineMobile();
+
   // apply transition items
-  transitionDelays('header-item');
   transitionDelays('skill');
 
   // check for item loading
@@ -23,8 +24,30 @@ function load() {
     });
 
   window.addEventListener('resize', function() {
-      resizeActions();
+    // determineMobile();
     });
+}
+
+/** Determine which stylesheet to use based on window aspect ratio. */
+function determineMobile() {
+  const styleSheetElement = document.getElementById('style');
+  if (window.innerWidth >= window.innerHeight) {
+    styleSheetElement.href = 'style.css';
+    transitionDelays('header-item');
+  } else {
+    styleSheetElement.href = 'style-mobile.css';
+    document.getElementById('exp-header').innerText = 'Experience';
+  }
+}
+
+/** Toggles menu display on mobile layout. */
+function toggleMenu() {
+  const list = document.getElementById('header-items').classList;
+  if(list.contains('clicked')) {
+    list.remove('clicked');
+  } else {
+    list.add('clicked');
+  }
 }
 
 /** Applies staggered transition delay to elements of certain class. */
@@ -43,11 +66,6 @@ function projectOverlays() {
 function scrollActions() {
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
   checkLoadElement('experience', 'tab', experienceItems);
-}
-
-/** Eventlister function that triggers when user resizes window. */
-function resizeActions() {
-
 }
 
 /** 
