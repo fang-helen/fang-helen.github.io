@@ -557,6 +557,7 @@ a:link.accent, a:visited.accent {
   display: flex;
   justify-content: space-around;
   height: 60vh;
+  padding-bottom: 20vh;
 }
 
 #contact-content {
