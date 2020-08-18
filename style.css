@@ -474,8 +474,17 @@ a:link.accent, a:visited.accent {
 }
 
 #projects-header {
+  left: -30vw;
   margin-top: max(10vh, 50px);
+  opacity: 0%;
+  position: relative;
   text-align: center;
+  transition: left 1s, opacity 1s ease;
+}
+
+#projects-header.after-load {
+  left: 0;
+  opacity: 100%;
 }
 
 #projects-list {
@@ -488,9 +497,17 @@ a:link.accent, a:visited.accent {
 .project-item {
   margin: max(.5vw, 5px);
   height: max(20vw, 250px);
+  opacity: 0%;
   overflow: hidden;
   position: relative;
+  top: -20vh;
+  transition: top .5s, opacity 1s ease;
   width: max(20vw, 250px);
+}
+
+.project-item.after-load {
+  opacity: 100%;
+  top: 0;
 }
 
 .project-overlay {
@@ -560,8 +577,29 @@ a:link.accent, a:visited.accent {
   padding-bottom: 20vh;
 }
 
+#contact-header {
+  bottom: 30vh;
+  opacity: 0%;
+  position: relative;
+  transition: bottom 1s, opacity 1s ease;
+}
+
+#contact-header.after-load {
+  bottom: 0;
+  opacity: 100%;
+}
+
 #contact-content {
+  left: 30vw;
+  opacity: 0%;
+  position: relative;
+  transition: left 1s, opacity 1s ease;
   width: max(50%, 450px);
+}
+
+#contact-content.after-load {
+  left: 0;
+  opacity: 100%;
 }
 
 .contact-link {
@@ -574,11 +612,12 @@ a:link.accent, a:visited.accent {
   margin: 1em;
   overflow: hidden;
   padding: 1em;
-  transition: width .5s ease;
+  position: relative;
+  transition: width .5s, left 1s, opacity 1s ease;
   width: 2em;
 }
 
-.contact-link img, .contact-link a {
+.contact-link img {
   height: 100%;
   margin: 0;
   object-fit: contain;

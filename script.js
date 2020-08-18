@@ -2,19 +2,24 @@ const color = "041625";
 const introItems = ['header-items', 'intro-content', 'intro-decor'];
 const aboutMeItems = ['aboutme-decor-light', 'aboutme-decor-dark'];
 const experienceItems = ['exp-content', 'exp-header', 'exp-decor'];
+const projectItems = ['projects-header'];
+const contactItems = ['contact-header', 'contact-content'];
 
 /** Actions to take when the page loads. */
 function load() {
   determineMobile();
 
-  // apply transition items
+  // apply transition delays to items
   transitionDelays('skill');
+  transitionDelays('project-item', 0.2);
 
   // check for item loading
   loadItemsById(introItems);
   loadItemsByClass('header-item');
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
   checkLoadElement('experience', null, experienceItems);
+  checkLoadElement('projects', 'project-item', projectItems);
+  checkLoadElement('contact', null, contactItems);
 
   // select the first item in work experience list
   toggleSelected(0);
@@ -57,10 +62,13 @@ function determineMobile() {
 }
 
 /** Applies staggered transition delay to elements of certain class. */
-function transitionDelays(classname) {
+function transitionDelays(classname, multiplier) {
   const items = document.getElementsByClassName(classname);
+  if(multiplier == null) {
+    multiplier = 0.1;
+  }
   for(var i = 0; i < items.length; i ++) {
-    items[i].style.transitionDelay = 0.1 * (i + 1) + 's';
+    items[i].style.transitionDelay = multiplier * (i + 1) + 's';
   }
 }
 
@@ -68,6 +76,8 @@ function transitionDelays(classname) {
 function scrollActions() {
   checkLoadElement('aboutme-content', 'skill', aboutMeItems);
   checkLoadElement('experience', 'tab', experienceItems);
+  checkLoadElement('projects', 'project-item', projectItems);
+  checkLoadElement('contact', 'contact-link', contactItems);
 }
 
 /** 
