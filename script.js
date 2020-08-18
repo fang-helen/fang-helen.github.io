@@ -28,7 +28,7 @@ function load() {
     });
 }
 
-/** Determine which stylesheet to use based on window aspect ratio. */
+/** Determine which stylesheet to use based on window aspect ratio and perform other tweaks. */
 function determineMobile() {
   const styleSheetElement = document.getElementById('style');
   if (window.innerWidth >= window.innerHeight) {
@@ -37,16 +37,22 @@ function determineMobile() {
   } else {
     styleSheetElement.href = 'style-mobile.css';
     document.getElementById('exp-header').innerText = 'Experience';
-  }
-}
 
-/** Toggles menu display on mobile layout. */
-function toggleMenu() {
-  const list = document.getElementById('header-items').classList;
-  if(list.contains('clicked')) {
-    list.remove('clicked');
-  } else {
-    list.add('clicked');
+    const items = document.getElementsByClassName('project-item');
+    items[0].onclick = function() {
+      toggleOverlays(0);
+    };
+    items[1].onclick = function() {
+      toggleOverlays(1);
+    };
+
+    for (var i = 0; i < items.length; i++ ) {
+      (function(i){ 
+        items[i].onclick = function() {
+          toggleOverlays(i);
+        }
+      })(i);
+    }
   }
 }
 
@@ -56,10 +62,6 @@ function transitionDelays(classname) {
   for(var i = 0; i < items.length; i ++) {
     items[i].style.transitionDelay = 0.1 * (i + 1) + 's';
   }
-}
-
-function projectOverlays() {
-  const overlays = document.getElementsByClassName('project-overlay');
 }
 
 /** Eventlistener function that triggers when user scrolls. */
@@ -103,6 +105,29 @@ function loadItemsByClass(subClassname) {
   const skills = document.getElementsByClassName(subClassname);
   for(var i = 0; i < skills.length; i ++) {
     skills[i].classList.add('after-load');
+  }
+}
+
+/** Toggles menu display on mobile layout. */
+function toggleMenu() {
+  const list = document.getElementById('header-items').classList;
+  if(list.contains('clicked')) {
+    list.remove('clicked');
+  } else {
+    list.add('clicked');
+  }
+}
+
+/** Toggles project overlay on mobile. */
+function toggleOverlays(index) {
+  const overlays = document.getElementsByClassName('project-overlay');
+  if(index == null || index < 0 || index >= overlays.length) {
+    return;
+  }
+  if(overlays[index].classList.contains('clicked')) {
+    overlays[index].classList.remove('clicked');
+  } else {
+    overlays[index].classList.add('clicked');
   }
 }
 

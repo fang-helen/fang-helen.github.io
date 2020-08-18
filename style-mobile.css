@@ -318,7 +318,7 @@ a:link.accent, a:visited.accent {
   z-index: 2;
 }
 
-.project-item:hover > .project-overlay {
+.project-overlay.clicked {
   margin-top: 100%;
 }
 
