@@ -9,10 +9,6 @@ const contactItems = ['contact-header', 'contact-content'];
 function load() {
   determineMobile();
 
-  // apply transition delays to items
-  transitionDelays('skill');
-  transitionDelays('project-item', 0.2);
-
   // check for item loading
   loadItemsById(introItems);
   loadItemsByClass('header-item');
@@ -54,6 +50,8 @@ function determineMobile() {
 function setDesktop() {
   document.getElementById('style').href = 'style.css';
   transitionDelays('header-item');
+  transitionDelays('skill');
+  transitionDelays('project-item', 0.2);
 }
 
 /** Additional setup for mobile layout. */

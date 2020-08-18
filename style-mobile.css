@@ -37,6 +37,7 @@ html, body {
 .section-header {
   font-size: max(3em, 6vh);
   margin-bottom: 3vh;
+  text-align: center;
 }
 
 .accent {
@@ -124,7 +125,7 @@ a:link.accent, a:visited.accent {
   justify-content: center;
   padding: 2vh;
   width: 35vh;
-  z-index: 1;
+  z-index: 2;
 }
 
 .link-icon {
@@ -148,20 +149,22 @@ a:link.accent, a:visited.accent {
 }
 
 #intro-decor {
-  background-color: #36455c;
+  background-color: #36455c73;
   bottom: 3vh;
-  height: 65vh;
+  height: 70vh;
+  opacity: 100%;
   position: absolute;
   width: calc(100% - 10vw);
-  z-index: 0;
+  z-index: 1;
 }
 
 #blurb {
   font-size: 2vh;
   opacity: 100%;
+  padding: 0 10%;
   position: relative;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* ABOUT ME */
@@ -171,6 +174,14 @@ a:link.accent, a:visited.accent {
   justify-content: space-around;
   position: relative;
   z-index: 2;
+}
+
+#skills-decor {
+  position: absolute;
+}
+
+.skills-section {
+  width: 35%;
 }
 
 /* EXPERIENCE */
@@ -356,7 +367,8 @@ a:link.accent, a:visited.accent {
 }
 
 .project-links a {
-  height: 1.5em;
+  height: 2em;
+  padding: .5em;
 }
 
 /* CONTACT SECTION */
