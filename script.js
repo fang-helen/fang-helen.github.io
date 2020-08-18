@@ -29,35 +29,46 @@ function load() {
     });
 
   window.addEventListener('resize', function() {
-    // determineMobile();
+    determineMobile();
     });
 }
 
+var currentStyle = null;
+
 /** Determine which stylesheet to use based on window aspect ratio and perform other tweaks. */
 function determineMobile() {
-  const styleSheetElement = document.getElementById('style');
   if (window.innerWidth >= window.innerHeight) {
-    styleSheetElement.href = 'style.css';
-    transitionDelays('header-item');
-  } else {
-    styleSheetElement.href = 'style-mobile.css';
-    document.getElementById('exp-header').innerText = 'Experience';
-
-    const items = document.getElementsByClassName('project-item');
-    items[0].onclick = function() {
-      toggleOverlays(0);
-    };
-    items[1].onclick = function() {
-      toggleOverlays(1);
-    };
-
-    for (var i = 0; i < items.length; i++ ) {
-      (function(i){ 
-        items[i].onclick = function() {
-          toggleOverlays(i);
-        }
-      })(i);
+    if(currentStyle != 'style.css') {
+      setDesktop();
     }
+    currentStyle = 'style.css';
+  } else {
+    if(currentStyle != 'style-mobile.css') {
+      setMobile();
+    }
+    currentStyle = 'style-mobile.css';
+  }
+}
+
+/** Additional setup for desktop layout. */
+function setDesktop() {
+  document.getElementById('style').href = 'style.css';
+  transitionDelays('header-item');
+}
+
+/** Additional setup for mobile layout. */
+function setMobile() {
+  document.getElementById('style').href = 'style-mobile.css';
+  document.getElementById('exp-header').innerText = 'Experience';
+
+  const items = document.getElementsByClassName('project-item');
+
+  for (var i = 0; i < items.length; i++ ) {
+    (function(i){ 
+      items[i].onclick = function() {
+        toggleOverlays(i);
+      }
+    })(i);
   }
 }
 
