@@ -379,7 +379,7 @@ a:link.accent, a:visited.accent {
 
 .contact-link {
   background-color: rgba(255, 255, 255, 0.233);
-  border-radius: 3vh;
+  border-radius: calc(1.5vh + 1em);
   display: flex;
   flex-flow: row nowrap;
   height: 3vh;
