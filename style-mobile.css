@@ -19,6 +19,7 @@ html, body {
   font: 100%/1.6 "Open-Sans-Light", "Trebuchet MS", Helvetica, sans-serif;
   height: 100%;
   margin: 0;
+  overflow: hidden;
   padding: 0;
   scroll-behavior: smooth;
   width: 100%;
