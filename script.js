@@ -25,7 +25,7 @@ function load() {
     });
 
   window.addEventListener('resize', function() {
-    determineMobile();
+      determineMobile();
     });
 }
 
