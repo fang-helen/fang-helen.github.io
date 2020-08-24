@@ -19,7 +19,7 @@ html, body {
   font: 100%/1.6 "Open-Sans-Light", "Trebuchet MS", Helvetica, sans-serif;
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0;
   scroll-behavior: smooth;
   width: 100%;
@@ -100,6 +100,7 @@ a:link.accent, a:visited.accent {
   flex-flow: column-reverse nowrap;
   justify-content: center;
   padding-top: 16vh;
+  position: relative;
 }
 
 #intro-left {
@@ -150,8 +151,8 @@ a:link.accent, a:visited.accent {
 
 #intro-decor {
   background-color: #36455c73;
-  bottom: 3vh;
-  height: 70vh;
+  bottom: 6vh;
+  height: 80vh;
   opacity: 100%;
   position: absolute;
   width: calc(100% - 10vw);
