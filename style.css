@@ -30,7 +30,7 @@ html, body {
 }
 
 .section {
-  padding: 5vh;
+  padding: 5vh 5vh 7vh 5vh;
   width: calc(100% - 10vh);
 }
 
@@ -42,7 +42,7 @@ html, body {
 
 .section-content {
   font-size: 3vh;
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .accent {
@@ -217,7 +217,7 @@ a:link.accent, a:visited.accent {
 /* ABOUT ME SECTION */
 #aboutme {
   background-color: #36455c;
-  height: 80vh;
+  min-height: 80vh;
   overflow-x: hidden;
 }
 
@@ -332,7 +332,7 @@ a:link.accent, a:visited.accent {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 #exp-header {
