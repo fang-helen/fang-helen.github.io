@@ -624,7 +624,8 @@ a:link.accent, a:visited.accent {
   padding: 1em;
   position: relative;
   transition: width .5s, left 1s, opacity 1s ease;
-  width: 2em;
+  /* width: 2em; */
+  width: 80%;
 }
 
 .contact-link img {
