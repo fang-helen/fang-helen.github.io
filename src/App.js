@@ -1,6 +1,8 @@
-import pfp from "./assets/pfp.jpg";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
+
+import pfp from "./assets/pfp.jpg";
+import Resume from "./assets/Resume.pdf";
 
 import "./App.css";
 
@@ -57,7 +59,7 @@ function App() {
         children={
           <div>
             {"(Or, download a PDF resume "}
-            <a class="formatted" href="files/Resume.pdf" target="_blank">
+            <a class="formatted" href={Resume} target="_blank">
               here
             </a>
             ).
