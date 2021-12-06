@@ -1,0 +1,216 @@
+/* font faces */
+
+@font-face {
+  font-family: Open-Sans-Light;
+  src: url(font/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: Qwigley;
+  src: url(font/Qwigley-Regular.ttf);
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(font/Comfortaa/static/Comfortaa-Light.ttf);
+}
+
+@font-face {
+  font-family: Nanum;
+  src: url(font/Nanum_Pen_Script/NanumPenScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(font/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+/* global */
+
+html,
+body {
+  color: #402a01;
+  background-color: white;
+  font: 100%/2 "Quicksand", "Trebuchet MS", Helvetica, sans-serif;
+  /* font-size: 1.05em; */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  color: #402a01;
+  text-decoration: none;
+}
+
+/* header */
+
+#header {
+  background-color: #73626b33;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  max-width: 800px;
+  z-index: 10;
+}
+
+.header-item {
+  font: 100%/1.6 "Nanum", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.5em;
+  padding: 0.75em 2em;
+}
+
+/* page contents */
+
+#content {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding-bottom: 5em;
+}
+
+.section {
+  width: 80%;
+  max-width: 800px;
+  padding: 3em;
+  padding-top: 10em;
+  /* background-color: #a7cbd9; */
+}
+
+.section.colored {
+  background-color: #f0f4f7;
+}
+
+.section-title {
+  font: 100%/1.6 "Quicksand", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 3em;
+  color: #73626b;
+}
+
+a.formatted {
+  color: #7d909e;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* intro panel */
+
+#intro-greeting {
+  color: #73626b;
+  font-size: 2em;
+  height: 1.1em;
+  margin-left: 0.1em;
+}
+
+#intro-title {
+  font-size: 4em;
+  height: 1.8em;
+}
+
+#intro-box {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#pfp {
+  object-fit: cover;
+  height: 13em;
+  width: 13em;
+  max-height: 250px;
+  max-width: 250px;
+  margin: 1em;
+  margin-right: 3em;
+}
+
+#blurb-box {
+  height: 100%;
+  flex-grow: 0.4;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.blurb {
+  height: 2em;
+  padding: 0.2em 0.5em;
+  margin: 0.25em;
+  width: 60%;
+}
+
+.blurb.one {
+  background-color: #a7cbd9;
+  text-align: left;
+  padding-right: 5em;
+  align-self: flex-start;
+}
+
+.blurb.two {
+  background-color: #dabb7b;
+  text-align: right;
+  padding-left: 5em;
+  align-self: flex-end;
+}
+
+/* contact */
+
+#contact-section {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.contact-link {
+  text-align: center;
+  width: 100%;
+}
+
+#color-scheme {
+  width: 200px;
+  display: flex;
+  height: 10vh;
+}
+
+.color {
+  height: 100%;
+  flex-grow: 1;
+}
+.color.one {
+  background-color: #73b2d9;
+}
+
+.color.two {
+  background-color: #a7cbd9;
+}
+
+.color.three {
+  background-color: #dabb7b;
+}
+
+.color.four {
+  background-color: #402a01;
+}
+
+.color.five {
+  background-color: #73626b;
+}
+
+/*
+color schemes:
+#39342D - dark gray
+#C1AF8A - sand
+#88B5D4 - powder blue
+#7D909E - gray-blue
+
+#73B2D9 - sky blue
+#A7CBD9 - light powder blue
+#BF9649 - gold
+#D9B391 - tan
+#73626B - dark mauve
+
+#402A01 - brown
+#0D0D0D - black
+*/
