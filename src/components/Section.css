@@ -2,7 +2,7 @@
   width: 80%;
   max-width: 800px;
   padding: 3em;
-  padding-top: 10em;
+  padding-top: max(7em, 15vh);
 }
 
 .section.colored {

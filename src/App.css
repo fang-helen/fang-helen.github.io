@@ -42,74 +42,7 @@ a.formatted {
   font-weight: bold;
 }
 
-/* intro panel */
-
-#intro-greeting {
-  color: #73626b;
-  font-size: 2em;
-  height: 1.1em;
-  margin-left: 0.1em;
-}
-
-#intro-title {
-  font-size: 4em;
-  height: 1.8em;
-}
-
-#intro-box {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-#pfp {
-  object-fit: cover;
-  height: 13em;
-  width: 13em;
-  max-height: 250px;
-  max-width: 250px;
-  margin: 1em;
-  margin-right: 3em;
-}
-
-#blurb-box {
-  height: 100%;
-  flex-grow: 0.4;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.blurb {
-  height: 2em;
-  padding: 0.2em 0.5em;
-  margin: 0.25em;
-  width: 60%;
-}
-
-.blurb.one {
-  background-color: #a7cbd9;
-  text-align: left;
-  padding-right: 5em;
-  align-self: flex-start;
-}
-
-.blurb.two {
-  background-color: #dabb7b;
-  text-align: right;
-  padding-left: 5em;
-  align-self: flex-end;
-}
-
-/* contact */
-
-#contact-section {
-  display: flex;
-  flex-flow: column nowrap;
-}
-.contact-link {
-  text-align: center;
-  width: 100%;
-}
+/* colors */
 
 #color-scheme {
   width: 200px;
