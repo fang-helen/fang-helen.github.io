@@ -1,0 +1,16 @@
+.section {
+  width: 80%;
+  max-width: 800px;
+  padding: 3em;
+  padding-top: 10em;
+}
+
+.section.colored {
+  background-color: #eaf0f3;
+}
+
+.section-title {
+  font: 100%/1.6 "Quicksand", "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 3em;
+  color: #73626b;
+}
