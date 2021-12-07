@@ -19,14 +19,23 @@ class ExperienceTile extends React.Component {
     return (
       <div class="experience-tile">
         <div class="experience-company">{this.state.company}</div>
-        <div class="experience-title">{this.state.title}</div>
-        <div class="experience-dates">{this.state.dates}</div>
-        <div class="experience-summary">{this.state.summary}</div>
-        <ul>
+        <div class="experience-container-top">
+          <div class="experience-title">{this.state.title}</div>
+          <div class="experience-dates">{this.state.dates}</div>
+        </div>
+        <div class="experience-container-bottom">
+          <div class="experience-container-small"></div>
+          <div class="experience-summary">{this.state.summary}</div>
+        </div>
+
+        <ul class="experience-bullets">
           {this.state.details.map((bullet) => (
             <li>{bullet}</li>
           ))}
         </ul>
+        <div class="experience-technologies">
+          {this.state.technologies.join(", ")}
+        </div>
       </div>
     );
   }

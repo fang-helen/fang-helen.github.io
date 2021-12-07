@@ -19,16 +19,17 @@ function Experience() {
           </a>
           ).
           <ExperienceTile
-            company="Facebook (Meta)"
+            company="Meta (Facebook)"
             title="SWE Intern"
             dates="Aug 2021 - Nov 2021"
             summary="Built out a new feature from end‑to‑end to set custom product
-              cover images creator collections on Instagram Shops."
+              cover images in creator collections on Instagram Shops."
+            technologies={["Hack", "Python Django"]}
             details={[
               "Created a new database schema to support the feature and collaborated with other engineers, " +
                 "both within and outside immediate team, to integrate it with other Shops backend infrastructure.",
-              "Implemented full frontend flow by adding UI elements using Bloks, a server‑side rendering framework.",
-              "Adapted media querying Django endpoint to accommodate additional parameters in order to suit more flexible use cases.",
+              "Implemented full frontend flow by adding UI elements and async controllers using Bloks, a server‑side rendering framework.",
+              "Adapted Django endpoint to more flexibly query product media.",
             ]}
           />
           <ExperienceTile
@@ -36,6 +37,7 @@ function Experience() {
             title="SWE Intern"
             dates="May 2021 - Aug 2021"
             summary="Completed two projects to improve the scalability, transparency, and accuracy of the Grid migrations estimates ecosystem."
+            technologies={["Hack", "XHP", "MySQL"]}
             details={[
               "Restructured the Enterprise Grid migrations framework to ensure duration estimates are front‑of‑mind " +
                 "and easily accounted for during development, improving scalability and accuracy for a system that " +
@@ -49,7 +51,8 @@ function Experience() {
             company="UT Department of Computer Science"
             title="Undergraduate Teaching Assistant"
             dates="Jan 2021 - May 2021"
-            summary="Assisted professor for CS313E, a data structures and algorithms course taught in Python."
+            summary="Worked as teaching assistant for CS313E, a data structures and algorithms course taught in Python."
+            technologies={["Python"]}
             details={[
               "Wrote unit test cases and autograding scripts for student assignments and exams.",
               "Held triweekly office hours to help students debug code.",
@@ -58,9 +61,16 @@ function Experience() {
           />
           <ExperienceTile
             company="Google"
-            title="Student Training in Engineering Program (STEP) Intern"
+            title="STEP Intern"
             dates="May 2020 - Aug 2020"
-            summary="Used HTML, CSS, Java servlets, and Google Cloud APIs within a Maven framework to build full-stack web applications."
+            summary="Used Google Cloud APIs to build full-stack web applications."
+            technologies={[
+              "HTML",
+              "CSS",
+              "Java",
+              "Google Cloud",
+              "Apache Spark",
+            ]}
             details={[
               "Implemented an interactive portfolio page where visitors can add comments and translate content.",
               "Worked closely with two other interns to design and develop a web application to search for, save, and " +
@@ -68,6 +78,14 @@ function Experience() {
                 "combines collaborative and content‐based filtering to suggest events to users.",
               "Engaged in an end-to-end software development cycle, including creating design docs, writing code, mocking objects and writing unit tests, setting up continuous integration, and completing code reviews.",
             ]}
+          />
+          <ExperienceTile
+            company="Sanger Learning Center (UT School of Undergraduate Studies)"
+            title="Tutor"
+            dates="Jan 2020 - Dec 2020"
+            summary="Tutored other undergraduate students in data structures, linear algebra, and calculus."
+            technologies={[]}
+            details={[]}
           />
         </div>
       }

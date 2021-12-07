@@ -34,7 +34,7 @@ a {
 }
 
 a.formatted {
-  color: #7d909e;
+  color: #5c8ea1;
   text-decoration: underline;
 }
 
@@ -55,24 +55,38 @@ a.formatted {
   flex-grow: 1;
 }
 .color.one {
-  background-color: #73b2d9;
-}
-
-.color.two {
   background-color: #a7cbd9;
 }
 
-.color.three {
+.color.two {
   background-color: #dabb7b;
+}
+
+.color.three {
+  background-color: #73626b;
 }
 
 .color.four {
   background-color: #402a01;
 }
 
-.color.five {
-  background-color: #73626b;
-}
+/*
+color scheme:
+
+powder blue
+text #5c8ea1
+background #a7cbd9
+
+gold
+background #dabb7b
+
+mauve
+background #73626b
+
+brown
+text #402a01
+
+*/
 
 /*
 color schemes:
