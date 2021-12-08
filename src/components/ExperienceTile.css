@@ -1,10 +1,12 @@
 .experience-tile {
-  padding-top: 1.5em;
+  padding-top: 1.8em;
+  padding-bottom: 1em;
 }
 
 .experience-company {
   color: #5c8ea1;
   font-size: 1.25em;
+  padding-bottom: 0.3em;
 }
 
 .experience-title {
