@@ -24,7 +24,7 @@ function Experience() {
             dates="Aug 2021 - Nov 2021"
             summary="Built out a new feature from end‑to‑end to set custom product
               cover images in creator collections on Instagram Shops."
-            technologies={["Hack", "Python Django"]}
+            technologies={["Hack/PHP", "Python Django"]}
             details={[
               "Created a new database schema to support the feature and collaborated with other engineers, " +
                 "both within and outside immediate team, to integrate it with other Shops backend infrastructure.",
@@ -37,7 +37,7 @@ function Experience() {
             title="SWE Intern"
             dates="May 2021 - Aug 2021"
             summary="Completed two projects to improve the scalability, transparency, and accuracy of the Grid migrations estimates ecosystem."
-            technologies={["Hack", "XHP", "MySQL"]}
+            technologies={["Hack/PHP", "XHP", "MySQL"]}
             details={[
               "Restructured the Enterprise Grid migrations framework to ensure duration estimates are front‑of‑mind " +
                 "and easily accounted for during development, improving scalability and accuracy for a system that " +

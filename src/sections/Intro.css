@@ -15,8 +15,6 @@
 }
 
 #intro-box {
-  display: flex;
-  align-items: center;
   flex-flow: row wrap;
 }
 

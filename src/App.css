@@ -33,6 +33,14 @@ a {
   padding-bottom: 5em;
 }
 
+li {
+  font-size: 0.5em;
+}
+
+li span {
+  font-size: 1.8em;
+}
+
 a.formatted {
   color: #5c8ea1;
   text-decoration: underline;
@@ -40,6 +48,12 @@ a.formatted {
 
 .bold {
   font-weight: bold;
+}
+
+.center-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* colors */
@@ -85,6 +99,8 @@ background #73626b
 
 brown
 text #402a01
+
+adjusted opacity: 7e
 
 */
 

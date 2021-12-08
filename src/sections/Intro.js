@@ -9,7 +9,7 @@ function Intro() {
       elementId="intro-section"
       colored={true}
       children={
-        <div id="intro-box">
+        <div id="intro-box" class="center-contents">
           <img src={pfp} id="pfp" alt="a picture of me!" />
 
           <div id="blurb-box">

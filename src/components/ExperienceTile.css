@@ -4,7 +4,7 @@
 
 .experience-company {
   color: #5c8ea1;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .experience-title {
@@ -13,11 +13,16 @@
   width: 20em;
 }
 
+.experience-container-middle,
 .experience-container-bottom,
 .experience-container-top {
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 0.5em;
+}
+
+.experience-container-middle {
+  justify-content: flex-end;
 }
 
 .experience-container-small {
@@ -30,7 +35,6 @@
 }
 
 .experience-summary {
-  /* border: 0.2em #a7cbd9 solid; */
   background-color: #a7cbd97e;
   padding: 0.5em 1em;
   padding-right: 5em;
@@ -40,14 +44,37 @@
 .experience-dates,
 .experience-technologies {
   font-size: 0.8em;
+  padding: 0 1.5em;
 }
 
 .experience-dates {
-  padding: 0 1.5em;
+  line-height: 1;
   flex-grow: 1;
+  align-self: flex-end;
   text-align: right;
 }
 
+.experience-technologies {
+  background-color: #dabb7b7e;
+  text-align: right;
+  width: 25em;
+}
+
+.experience-bullets-container {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
 .experience-bullets {
-  margin: 0.5em 0;
+  padding: 0.5em 0 1em 0;
+  margin: 0 5%;
+}
+
+.experience-bullets-toggle {
+  background-color: #73626b7e;
+  border-radius: 0.75em;
+  height: 1.5em;
+  width: 1.5em;
+  cursor: pointer;
 }
