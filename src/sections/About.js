@@ -14,9 +14,9 @@ function About() {
           </p>
           <p>
             I think software engineering is really great because I get to solve
-            interesting problems every day! I've completed a couple of SWE
-            internships at various tech companies and I enjoy backend and
-            full-stack work.
+            interesting problems every day! So far I've completed software
+            internships at Google, Meta/Facebook, and Slack which were all lots
+            of fun, and I enjoy backend and full-stack work.
           </p>
           <p>
             I also speak Mandarin fluently, and in my free time I enjoy cooking,
