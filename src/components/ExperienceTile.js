@@ -1,8 +1,9 @@
 import React from "react";
 
+import arrow from "../assets/arrow.png";
 import "./ExperienceTile.css";
 
-const TOGGLED_CLASSNAME = "collapsed";
+const EXPANDED_CLASSNAME = "expanded";
 
 class ExperienceTile extends React.Component {
   constructor(props) {
@@ -21,18 +22,27 @@ class ExperienceTile extends React.Component {
   }
 
   toggle() {
-    var toggleIcon = document.getElementById("toggle-" + this.state.identifier);
+    var toggleIcon = document.getElementById("arrow-" + this.state.identifier);
     var bulletsContainer = document.getElementById(
       "container-" + this.state.identifier
     );
     var bullets = document.getElementById("bullets-" + this.state.identifier);
-    if (!toggleIcon.classList.contains(TOGGLED_CLASSNAME)) {
-      toggleIcon.classList.add(TOGGLED_CLASSNAME);
+    if (!toggleIcon.classList.contains(EXPANDED_CLASSNAME)) {
+      // expanding
       bulletsContainer.style.height = bullets.scrollHeight + "px";
+
+      toggleIcon.classList.remove("two");
+      void toggleIcon.offsetWidth; // triggers reflow to reset animation
+      toggleIcon.classList.add("one");
     } else {
-      toggleIcon.classList.remove(TOGGLED_CLASSNAME);
+      // collapsing
       bulletsContainer.style.height = "0";
+
+      toggleIcon.classList.remove("one");
+      void toggleIcon.offsetWidth;
+      toggleIcon.classList.add("two");
     }
+    toggleIcon.classList.toggle(EXPANDED_CLASSNAME);
   }
 
   render() {
@@ -56,7 +66,7 @@ class ExperienceTile extends React.Component {
         </div>
 
         <div
-          class={"experience-bullets-container " + TOGGLED_CLASSNAME}
+          class={"experience-bullets-container " + EXPANDED_CLASSNAME}
           id={"container-" + this.state.identifier}
         >
           <div
@@ -77,9 +87,11 @@ class ExperienceTile extends React.Component {
               id={"toggle-" + this.state.identifier}
               onClick={this.toggle}
             >
-              {
-                // todo: add decorator
-              }
+              <img
+                src={arrow}
+                class="toggle-arrow"
+                id={"arrow-" + this.state.identifier}
+              />
             </div>
           </div>
         ) : null}

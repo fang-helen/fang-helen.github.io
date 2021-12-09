@@ -75,8 +75,45 @@
 
 .experience-bullets-toggle {
   background-color: #73626b7e;
-  border-radius: 0.75em;
+  /* border-radius: 0.75em; */
   height: 1.5em;
-  width: 1.5em;
+  width: 3em;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-arrow {
+  height: 30%;
+}
+
+.toggle-arrow.expanded {
+  transform: rotateX(180deg);
+}
+
+.toggle-arrow.one {
+  animation: flip 0.8s;
+}
+
+.toggle-arrow.two {
+  animation: flip-reverse 0.8s;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes flip-reverse {
+  from {
+    transform: rotateX(180deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
 }
