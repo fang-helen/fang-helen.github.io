@@ -14,6 +14,7 @@ function Contact() {
             href="mailto:helenfang524@gmail.com"
             class="contact-link"
             target="_blank"
+            rel="noreferrer"
           >
             helenfang524@gmail.com
           </a>
@@ -21,6 +22,7 @@ function Contact() {
             href="https://www.linkedin.com/in/helen-fang/"
             class="contact-link"
             target="_blank"
+            rel="noreferrer"
           >
             www.linkedin.com/in/helen-fang
           </a>

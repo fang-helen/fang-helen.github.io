@@ -12,7 +12,7 @@ function Experience() {
       children={
         <div>
           {"(Or, download a PDF resume "}
-          <a class="formatted" href={Resume} target="_blank">
+          <a class="formatted" href={Resume} target="_blank" rel="noreferrer">
             here
           </a>
           ).

@@ -10,7 +10,7 @@ function Intro() {
       colored={true}
       children={
         <div id="intro-box" class="center-contents">
-          <img src={pfp} id="pfp" alt="a picture of me!" />
+          <img src={pfp} id="pfp" alt="me!" />
 
           <div id="blurb-box">
             <div id="intro-greeting">Hi! I'm</div>

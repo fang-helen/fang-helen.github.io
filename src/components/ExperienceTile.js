@@ -71,6 +71,7 @@ class ExperienceTile extends React.Component {
                   src={arrow}
                   class="toggle-arrow"
                   id={"arrow-" + this.state.identifier}
+                  alt="v"
                 />
               </div>
             </div>
