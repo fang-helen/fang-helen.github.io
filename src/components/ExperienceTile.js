@@ -60,6 +60,21 @@ class ExperienceTile extends React.Component {
         </div>
 
         <div class="experience-container-middle">
+          {this.state.details != null && this.state.details.length > 0 ? (
+            <div class="center-contents">
+              <div
+                class="experience-bullets-toggle"
+                id={"toggle-" + this.state.identifier}
+                onClick={this.toggle}
+              >
+                <img
+                  src={arrow}
+                  class="toggle-arrow"
+                  id={"arrow-" + this.state.identifier}
+                />
+              </div>
+            </div>
+          ) : null}
           <div class="experience-technologies">
             {this.state.technologies.join(", ")}
           </div>
@@ -80,21 +95,6 @@ class ExperienceTile extends React.Component {
             ))}
           </div>
         </div>
-        {this.state.details != null && this.state.details.length > 0 ? (
-          <div class="center-contents">
-            <div
-              class="experience-bullets-toggle"
-              id={"toggle-" + this.state.identifier}
-              onClick={this.toggle}
-            >
-              <img
-                src={arrow}
-                class="toggle-arrow"
-                id={"arrow-" + this.state.identifier}
-              />
-            </div>
-          </div>
-        ) : null}
       </div>
     );
   }

@@ -1,4 +1,4 @@
-import pfp from "../assets/pfp.jpg";
+import pfp from "../assets/nyc_cropped.png";
 import Section from "../components/Section";
 
 import "./Intro.css";

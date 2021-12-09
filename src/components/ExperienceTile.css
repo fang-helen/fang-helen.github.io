@@ -24,7 +24,7 @@
 }
 
 .experience-container-middle {
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .experience-container-small {
