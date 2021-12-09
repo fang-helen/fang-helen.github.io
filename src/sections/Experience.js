@@ -3,8 +3,6 @@ import Resume from "../assets/Resume.pdf";
 
 import ExperienceTile from "../components/ExperienceTile";
 
-import "./Experience.css";
-
 function Experience() {
   return (
     <Section
