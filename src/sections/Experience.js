@@ -29,7 +29,7 @@ function Experience() {
               "Created a new database schema to support the feature and collaborated with other engineers, " +
                 "both within and outside immediate team, to integrate it with other Shops backend infrastructure.",
               "Implemented full frontend flow by adding UI elements and async controllers using Bloks, a server‑side rendering framework.",
-              "Adapted Django endpoint to more flexibly query product media.",
+              "Adapted a Django endpoint to more flexibly query product media.",
             ]}
           />
           <ExperienceTile
