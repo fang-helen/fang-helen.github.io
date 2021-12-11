@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./SocialLink.css";
-
 class SocialLink extends React.Component {
   constructor(props) {
     super(props);
