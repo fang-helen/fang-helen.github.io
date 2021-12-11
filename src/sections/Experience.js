@@ -72,7 +72,8 @@ function Experience() {
             details={[
               "Implemented an interactive portfolio page where visitors can add comments and translate content.",
               "Worked closely with two other interns to design and develop a web application to search for, save, and " +
-                "create events within users’ communities. Utilized Apache Spark to create a recommendation system that " +
+                "create events within users’ communities.",
+              "Utilized Apache Spark to create a recommendation system that " +
                 "combines collaborative and content‐based filtering to suggest events to users.",
               "Engaged in an end-to-end software development cycle, including creating design docs, writing code, " +
                 "mocking objects and adding unit tests, setting up continuous integration, and completing code reviews.",

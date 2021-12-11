@@ -19,8 +19,9 @@ function About() {
             of fun, and I enjoy backend and full-stack work.
           </p>
           <p>
-            I also speak Mandarin fluently, and in my free time I enjoy cooking,
-            eating desserts, playing games with friends, and sewing!
+            I also speak Mandarin fluently, and in my free time some things I
+            enjoy include cooking, eating desserts, playing games with friends,
+            and sewing!
           </p>
         </div>
       }

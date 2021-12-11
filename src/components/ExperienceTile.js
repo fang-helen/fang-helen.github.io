@@ -55,7 +55,6 @@ class ExperienceTile extends React.Component {
         </div>
 
         <div class="experience-container-bottom">
-          {/* <div class="experience-container-small"></div> */}
           <div class="experience-summary">{this.state.summary}</div>
         </div>
 

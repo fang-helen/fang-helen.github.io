@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @font-face {
   font-family: Nanum;
   src: url(fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf);
@@ -10,13 +11,20 @@
 
 html,
 body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   color: #402a01;
   background-color: white;
   font: 100%/2 "Quicksand", "Trebuchet MS", Helvetica, sans-serif;
-  height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 a {
@@ -51,9 +59,14 @@ a.formatted {
 }
 
 .center-contents {
+  /* centers contents within this div */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-link {
+  color: #73626b;
 }
 
 /* colors */
@@ -86,6 +99,9 @@ a.formatted {
 
 /*
 color scheme:
+
+light powder blue
+background #eaf0f3
 
 powder blue
 text #5c8ea1
