@@ -14,7 +14,8 @@ function App() {
       <Navbar />
       <div id="page-contents">
         <div id="sidebar-padding" class="social-item">
-          {/* helps center contents, even with sidebar on the other side  */}_
+          {/* helps center contents, even with sidebar on the other side  */}
+          <i class="fas fa-file-alt"></i>
         </div>
         <div id="page-sections">
           <Intro />

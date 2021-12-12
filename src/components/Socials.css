@@ -1,8 +1,9 @@
-.social-link {
-  color: #73626b;
-}
-
 .social-item {
   line-height: 1;
   font-size: 1.5em;
+  margin: 0.2em;
+}
+
+.social-link {
+  color: #73626b;
 }
