@@ -88,8 +88,8 @@ class ExperienceTile extends React.Component {
             class="experience-bullets"
             id={"bullets-" + this.state.identifier}
           >
-            {this.state.details.map((bullet) => (
-              <li>
+            {this.state.details.map((bullet, index) => (
+              <li key={index}>
                 <span>{bullet}</span>
               </li>
             ))}

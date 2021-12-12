@@ -41,6 +41,21 @@ a {
   padding-bottom: 5em;
 }
 
+#page-contents {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#page-sections {
+  width: calc(80% + 6em);
+  max-width: calc(800px + 6em);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 li {
   font-size: 0.5em;
 }
@@ -63,10 +78,6 @@ a.formatted {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.social-link {
-  color: #73626b;
 }
 
 /* colors */

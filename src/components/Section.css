@@ -1,6 +1,5 @@
 .section {
-  width: 80%;
-  max-width: 800px;
+  width: calc(100% - 6em);
   padding: 3em;
   padding-top: max(7em, 15vh);
 }

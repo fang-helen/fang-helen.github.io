@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 import Intro from "./sections/Intro";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
@@ -11,11 +12,19 @@ function App() {
   return (
     <div id="content">
       <Navbar />
-      <Intro />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div id="page-contents">
+        <div id="sidebar-padding" class="social-item">
+          {/* helps center contents, even with sidebar on the other side  */}_
+        </div>
+        <div id="page-sections">
+          <Intro />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </div>
+        <Sidebar />
+      </div>
 
       <div id="color-scheme">
         <div class="color one">1</div>

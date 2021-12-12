@@ -36,15 +36,6 @@
   max-width: 250px;
 }
 
-#socials-links-intro {
-  font-size: 1.25em;
-  display: flex;
-  flex-flow: row wrap;
-  width: 60%;
-  justify-content: space-around;
-  margin-top: 0.5em;
-}
-
 /* right side contents */
 
 #blurb-box {

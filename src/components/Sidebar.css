@@ -1,0 +1,22 @@
+#sidebar,
+#sidebar-padding {
+  padding: 0.75em 0.5em;
+}
+
+#sidebar {
+  background-color: #73626b43;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  height: 9em;
+}
+
+#sidebar.social-link {
+  color: white;
+}
+
+#sidebar-padding {
+  color: transparent;
+}
