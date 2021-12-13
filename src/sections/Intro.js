@@ -1,6 +1,7 @@
 import pfp from "../assets/nyc_cropped.png";
 
 import Section from "../components/Section";
+import ResumeButton from "../components/ResumeButton";
 
 import "./Intro.css";
 
@@ -13,6 +14,7 @@ function Intro() {
         <div id="intro-box" class="center-contents">
           <div id="intro-box-right">
             <img src={pfp} id="pfp" alt="me!" />
+            <ResumeButton />
           </div>
 
           <div id="blurb-box">

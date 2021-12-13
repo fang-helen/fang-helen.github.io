@@ -1,11 +1,14 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import ReactTip from "./components/ReactTip";
+
 import Intro from "./sections/Intro";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 
 import "./App.css";
+import "./more-styles/Animations.css";
 
 function App() {
   return (
@@ -18,16 +21,7 @@ function App() {
         </div>
         <div id="page-sections">
           <Intro />
-          <div id="react">
-            Built using React{" "}
-            <a
-              href="https://github.com/fang-helen/fang-helen.github.io"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i id="react-icon" class="fas fa-code"></i>
-            </a>
-          </div>
+          <ReactTip />
           <About />
           <Experience />
           <Projects />

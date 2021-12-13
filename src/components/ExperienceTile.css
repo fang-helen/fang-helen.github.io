@@ -81,6 +81,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  animation: 1s linear 0s infinite bounce;
 }
 
 .toggle-arrow {
@@ -98,22 +100,4 @@
 
 .toggle-arrow.two {
   animation: flip-reverse 0.8s;
-}
-
-@keyframes flip {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateX(180deg);
-  }
-}
-
-@keyframes flip-reverse {
-  from {
-    transform: rotateX(180deg);
-  }
-  to {
-    transform: rotateX(0deg);
-  }
 }

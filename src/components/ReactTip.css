@@ -1,0 +1,12 @@
+#react {
+  color: #73626b;
+  font-size: 0.75em;
+  text-align: right;
+  /* font-weight: bold; */
+  font-family: "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#react-icon {
+  font-size: 0.9em;
+  margin: 0 0.2em;
+}
