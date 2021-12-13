@@ -1,7 +1,7 @@
 .section {
   width: calc(100% - 6em);
   padding: 3em;
-  padding-top: max(7em, 15vh);
+  padding-top: max(5em, 9vh);
 }
 
 .section.colored {

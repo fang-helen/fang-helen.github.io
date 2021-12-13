@@ -1,9 +1,0 @@
-#contact-links {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.contact-link {
-  text-align: center;
-  width: 100%;
-}

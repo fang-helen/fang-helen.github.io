@@ -4,7 +4,6 @@ import Intro from "./sections/Intro";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
-import Contact from "./sections/Contact";
 
 import "./App.css";
 
@@ -22,7 +21,6 @@ function App() {
           <About />
           <Experience />
           <Projects />
-          <Contact />
         </div>
         <Sidebar />
       </div>
