@@ -4,7 +4,7 @@ import "./Sidebar.css";
 
 function Sidebar() {
   return (
-    <div id="sidebar" style={{ top: "0px" }}>
+    <div id="sidebar">
       <SocialLink
         title="Resume"
         url="#work-section"

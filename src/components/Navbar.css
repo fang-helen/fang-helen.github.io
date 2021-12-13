@@ -1,6 +1,7 @@
 #header {
   background-color: #73626b43;
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-flow: row wrap;
   justify-content: center;
   position: fixed;
