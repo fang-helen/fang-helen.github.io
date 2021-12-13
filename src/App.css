@@ -82,6 +82,19 @@ a.formatted {
   justify-content: center;
 }
 
+/* misc */
+#react {
+  color: #73626b;
+  font-size: 0.75em;
+  text-align: right;
+  /* font-weight: bold; */
+}
+
+#react-icon {
+  font-size: 0.9em;
+  margin: 0 0.2em;
+}
+
 /* colors */
 
 #color-scheme {
