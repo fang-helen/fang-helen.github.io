@@ -1,5 +1,3 @@
-import arrow from "../assets/arrow.png";
-
 import "./ResumeButton.css";
 
 function ResumeButton() {
