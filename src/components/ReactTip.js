@@ -5,7 +5,7 @@ function ReactTip() {
     <div id="react">
       Built using React{" "}
       <a
-        href="https://github.com/fang-helen/fang-helen.github.io"
+        href="https://github.com/fang-helen/fang-helen.github.io/tree/project-code"
         target="_blank"
         rel="noreferrer"
       >
