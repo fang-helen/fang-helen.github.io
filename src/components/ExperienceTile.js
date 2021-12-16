@@ -1,6 +1,5 @@
 import React from "react";
 
-import arrow from "../assets/arrow.png";
 import "./ExperienceTile.css";
 
 const EXPANDED_CLASSNAME = "expanded";
@@ -66,12 +65,10 @@ class ExperienceTile extends React.Component {
                 id={"toggle-" + this.state.identifier}
                 onClick={this.toggle}
               >
-                <img
-                  src={arrow}
-                  class="toggle-arrow"
+                <i
+                  class="fa fa-chevron-down toggle-arrow"
                   id={"arrow-" + this.state.identifier}
-                  alt="v"
-                />
+                ></i>
               </div>
             </div>
           ) : null}

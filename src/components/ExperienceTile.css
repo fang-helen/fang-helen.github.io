@@ -86,8 +86,8 @@
 }
 
 .toggle-arrow {
-  height: 30%;
-  opacity: 75%;
+  font-size: 0.7em;
+  color: white;
 }
 
 .toggle-arrow.expanded {
