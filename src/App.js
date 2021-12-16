@@ -29,13 +29,13 @@ function App() {
         <Sidebar />
       </div>
 
-      <div id="color-scheme">
+      {/* <div id="color-scheme">
         <div class="color one">1</div>
         <div class="color two">2</div>
         <div class="color three">3</div>
         <div class="color four">4</div>
         <div class="color five">5</div>
-      </div>
+      </div> */}
     </div>
   );
 }
