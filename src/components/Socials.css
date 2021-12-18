@@ -5,5 +5,5 @@
 }
 
 .social-link {
-  color: #73626b;
+  color: var(--mauve-bg);
 }

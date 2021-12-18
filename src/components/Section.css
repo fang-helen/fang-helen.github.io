@@ -1,15 +1,14 @@
 .section {
-  width: calc(100% - 6em);
-  padding: 3em;
-  padding-top: max(5em, 9vh);
+  width: calc(100% - 4em);
+  padding: max(5em, 9vh) 2em 2em 2em;
 }
 
 .section.colored {
-  background-color: #eaf0f3;
+  background-color: var(--light-powder-blue-bg);
 }
 
 .section-title {
   font: 100%/1.6 "Quicksand", "Trebuchet MS", Helvetica, sans-serif;
   font-size: 3em;
-  color: #73626b;
+  color: var(--mauve-bg);
 }

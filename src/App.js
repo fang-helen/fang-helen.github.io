@@ -9,6 +9,7 @@ import Projects from "./sections/Projects";
 
 import "./App.css";
 import "./more-styles/Animations.css";
+import "./more-styles/Colors.css";
 
 function App() {
   return (

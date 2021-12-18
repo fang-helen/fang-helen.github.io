@@ -5,7 +5,7 @@
 }
 
 #sidebar {
-  background-color: #73626b43;
+  background-color: var(--mauve-bg-reduced-2);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

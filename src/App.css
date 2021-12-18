@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  color: #402a01;
+  color: var(--brown-text);
   background-color: white;
   font: 100%/2 "Quicksand", "Trebuchet MS", Helvetica, sans-serif;
   margin: 0;
@@ -26,7 +26,7 @@ body {
 }
 
 a {
-  color: #402a01;
+  color: var(--brown-text);
   text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ li span {
 }
 
 a.formatted {
-  color: #5c8ea1;
+  color: var(--powder-blue-text);
   text-decoration: underline;
 }
 
@@ -92,39 +92,39 @@ a.formatted {
   flex-grow: 1;
 }
 .color.one {
-  background-color: #a7cbd9;
+  background-color: var(--powder-blue-bg);
 }
 
 .color.two {
-  background-color: #dabb7b;
+  background-color: var(--gold-bg);
 }
 
 .color.three {
-  background-color: #73626b;
+  background-color: var(--mauve-bg);
 }
 
 .color.four {
-  background-color: #402a01;
+  background-color: var(--brown-text);
 }
 
 /*
 color scheme:
 
 light powder blue
-background #eaf0f3
+background var(--light-powder-blue-bg)
 
 powder blue
-text #5c8ea1
+text var(--powder-blue-text)
 background #a7cbd9
 
 gold
-background #dabb7b
+background var(--gold-bg)
 
 mauve
-background #73626b
+background var(--mauve-bg)
 
 brown
-text #402a01
+text var(--brown-text)
 
 adjusted opacity: 7e
 
@@ -141,8 +141,8 @@ color schemes:
 #A7CBD9 - light powder blue
 #BF9649 - gold
 #D9B391 - tan
-#73626B - dark mauve
+var(--mauve-bg) - dark mauve
 
-#402A01 - brown
+var(--brown-text) - brown
 #0D0D0D - black
 */

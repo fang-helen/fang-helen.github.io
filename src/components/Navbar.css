@@ -1,5 +1,5 @@
 #header {
-  background-color: #73626b43;
+  background-color: var(--mauve-bg-reduced-2);
   /* display: flex; */
   display: none;
   flex-flow: row wrap;

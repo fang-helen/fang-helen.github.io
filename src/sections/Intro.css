@@ -3,7 +3,7 @@
 }
 
 #intro-greeting {
-  color: #73626b;
+  color: var(--mauve-bg);
   font-size: 2em;
   height: 1.1em;
   margin-left: 0.1em;
@@ -53,14 +53,14 @@
 }
 
 .blurb.one {
-  background-color: #a7cbd9;
+  background-color: var(--powder-blue-bg);
   text-align: left;
   padding-right: 5em;
   align-self: flex-start;
 }
 
 .blurb.two {
-  background-color: #dabb7b;
+  background-color: var(--gold-bg);
   text-align: right;
   padding-left: 5em;
   align-self: flex-end;

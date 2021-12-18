@@ -4,13 +4,13 @@
 }
 
 .experience-company {
-  color: #5c8ea1;
+  color: var(--powder-blue-text);
   font-size: 1.25em;
   padding-bottom: 0.3em;
 }
 
 .experience-title {
-  background-color: #dabb7b;
+  background-color: var(--gold-bg);
   padding-left: 1em;
   width: 20em;
 }
@@ -37,7 +37,7 @@
 }
 
 .experience-summary {
-  background-color: #a7cbd97e;
+  background-color: var(--powder-blue-bg-reduced);
   padding: 0.5em 1em;
   padding-right: 5em;
   width: 100%;
@@ -57,7 +57,7 @@
 }
 
 .experience-technologies {
-  background-color: #dabb7b7e;
+  background-color: var(--gold-bg-reduced);
   text-align: right;
   width: 25em;
 }
@@ -74,7 +74,7 @@
 }
 
 .experience-bullets-toggle {
-  background-color: #73626b7e;
+  background-color: var(--mauve-bg-reduced-1);
   height: 1.5em;
   width: 3em;
   cursor: pointer;
