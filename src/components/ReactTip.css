@@ -2,8 +2,7 @@
   color: var(--mauve-bg-reduced-0);
   font-size: 0.75em;
   text-align: right;
-  /* font-weight: bold; */
-  font-family: "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 #react-icon {

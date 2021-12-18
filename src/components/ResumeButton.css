@@ -2,8 +2,8 @@
   background-color: var(--mauve-bg-reduced-2);
   height: 2.5em;
   color: var(--mauve-bg);
-  font-family: "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-size: 0.85em;
+  font-weight: bold;
   padding: 0 0.8em;
   margin: 1em;
   display: flex;
