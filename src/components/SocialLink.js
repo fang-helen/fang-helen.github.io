@@ -9,7 +9,6 @@ class SocialLink extends React.Component {
       title: props.title,
       url: props.url,
       icon: props.icon,
-      target: props.target !== undefined ? props.target : "_blank",
     };
   }
 
@@ -20,7 +19,7 @@ class SocialLink extends React.Component {
           class="social-link"
           href={this.state.url}
           title={this.state.title}
-          target={this.state.target}
+          target="_blank"
           rel="noreferrer"
         >
           {this.state.icon}

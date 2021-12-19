@@ -1,16 +1,20 @@
 .resume-button {
-  background-color: var(--mauve-bg-reduced-2);
-  height: 2.5em;
-  color: var(--mauve-bg);
-  font-size: 0.85em;
+  background-color: var(--mauve-bg-reduced-1);
+  /* color: var(--mauve); */
   font-weight: bold;
+
+  /* box-shadow: -10px 10px 2px var(--gold-bg-reduced),
+    -15px -5px 2px 3px var(--powder-blue-bg-reduced); */
+
+  height: 2.5em;
   padding: 0 0.8em;
   margin: 1em;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  animation: 1s linear 0s infinite bounce;
+  animation: 1s linear 0s infinite bounce-10;
 }
 
 .resume-button span,

@@ -1,4 +1,5 @@
 import SocialLink from "./SocialLink";
+import Resume from "../assets/Resume.pdf";
 
 import "./Sidebar.css";
 
@@ -6,15 +7,14 @@ function Sidebar() {
   return (
     <div id="sidebar">
       <SocialLink
-        title="Resume"
-        url="#work-section"
-        target="_self"
-        icon={<i class="fas fa-file-alt"></i>}
+        title="Resume (PDF)"
+        url={Resume}
+        icon={<i class="fas fa-file-pdf"></i>}
       />
       <SocialLink
         title="Email"
         url="mailto:helenfang524@gmail.com"
-        icon={<i class="fas fa-envelope"></i>}
+        icon={<i class="fas fa-envelope" style={{ fontSize: "0.9em" }}></i>}
       />
       <SocialLink
         title="Github"

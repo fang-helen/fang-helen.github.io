@@ -63,6 +63,7 @@ class ExperienceTile extends React.Component {
               <div
                 class="experience-bullets-toggle"
                 id={"toggle-" + this.state.identifier}
+                title="Expand"
                 onClick={this.toggle}
               >
                 <i

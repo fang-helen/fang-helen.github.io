@@ -10,5 +10,5 @@
 .section-title {
   font: 100%/1.6 "Quicksand", "Trebuchet MS", Helvetica, sans-serif;
   font-size: 3em;
-  color: var(--mauve-bg);
+  color: var(--mauve);
 }

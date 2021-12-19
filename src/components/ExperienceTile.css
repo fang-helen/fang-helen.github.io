@@ -57,7 +57,7 @@
 }
 
 .experience-technologies {
-  background-color: var(--gold-bg-reduced);
+  background-color: var(--mauve-bg-reduced-3);
   text-align: right;
   width: 25em;
 }
@@ -74,7 +74,6 @@
 }
 
 .experience-bullets-toggle {
-  background-color: var(--mauve-bg-reduced-1);
   height: 1.5em;
   width: 3em;
   cursor: pointer;
@@ -82,12 +81,11 @@
   align-items: center;
   justify-content: center;
 
-  animation: 1s linear 0s infinite bounce;
+  animation: 1s linear 0s infinite bounce-20;
 }
 
 .toggle-arrow {
-  font-size: 0.7em;
-  color: white;
+  color: var(--mauve-bg-reduced-1);
 }
 
 .toggle-arrow.expanded {

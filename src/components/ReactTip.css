@@ -1,5 +1,5 @@
 #react {
-  color: var(--mauve-bg-reduced-0);
+  color: var(--mauve-text-reduced);
   font-size: 0.75em;
   text-align: right;
   font-weight: bold;
@@ -8,5 +8,5 @@
 #react-icon {
   font-size: 0.9em;
   margin: 0 1em 0 0.2em;
-  color: var(--mauve-bg-reduced-0);
+  color: var(--mauve-text-reduced);
 }

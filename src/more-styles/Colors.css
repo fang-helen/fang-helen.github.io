@@ -8,10 +8,11 @@
   --gold-bg: #eacb8b;
   --gold-bg-reduced: #eacb8b7e;
 
-  --mauve-bg: #73626b;
-  --mauve-bg-reduced-0: #73626b93;
-  --mauve-bg-reduced-1: #73626b7e;
-  --mauve-bg-reduced-2: #73626b43;
+  --mauve: #83626b;
+  --mauve-text-reduced: #83626b93;
+  --mauve-bg-reduced-1: #83626b7e;
+  --mauve-bg-reduced-2: #83626b43;
+  --mauve-bg-reduced-3: #83626b20;
 
   --brown-text: #402a01;
 }

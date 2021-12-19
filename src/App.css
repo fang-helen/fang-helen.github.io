@@ -106,7 +106,7 @@ a.formatted {
 }
 
 .color.three {
-  background-color: var(--mauve-bg);
+  background-color: var(--mauve);
 }
 
 .color.four {
@@ -127,7 +127,7 @@ gold
 background var(--gold-bg)
 
 mauve
-background var(--mauve-bg)
+background var(--mauve)
 
 brown
 text var(--brown-text)
@@ -147,7 +147,7 @@ color schemes:
 #A7CBD9 - light powder blue
 #BF9649 - gold
 #D9B391 - tan
-var(--mauve-bg) - dark mauve
+var(--mauve) - dark mauve
 
 var(--brown-text) - brown
 #0D0D0D - black

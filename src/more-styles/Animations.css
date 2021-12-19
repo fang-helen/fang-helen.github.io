@@ -1,9 +1,21 @@
-@keyframes bounce {
+@keyframes bounce-10 {
   0% {
     transform: translateY(0%);
   }
   50% {
     transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes bounce-20 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
   }
   100% {
     transform: translateY(0%);
