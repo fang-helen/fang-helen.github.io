@@ -1,0 +1,10 @@
+.project-tile-square {
+  background-color: var(--mauve-bg-reduced-2);
+  width: 40%;
+  padding-bottom: 40%;
+  margin: 3%;
+}
+
+.project-tile {
+  position: absolute;
+}
