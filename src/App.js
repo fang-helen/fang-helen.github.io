@@ -16,10 +16,7 @@ function App() {
     <div id="content">
       <Navbar />
       <div id="page-contents">
-        <div id="sidebar-padding" class="social-item">
-          {/* helps center contents, even with sidebar on the other side  */}
-          <i class="fab fa-github"></i>
-        </div>
+        <div id="sidebar-padding">{/* helps center contents */}</div>
         <div id="page-sections">
           <Intro />
           <ReactTip />

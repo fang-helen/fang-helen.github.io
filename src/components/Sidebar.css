@@ -14,7 +14,7 @@
   justify-content: flex-end;
   position: sticky;
   align-self: flex-start;
-  margin-top: 30vh;
+  margin-top: calc(max(10em, 22vh) + 1em);
   top: 0px;
 }
 
