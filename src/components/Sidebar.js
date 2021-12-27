@@ -6,6 +6,7 @@ import "./Sidebar.css";
 function Sidebar() {
   return (
     <div id="sidebar">
+      <div id="sidebar-tip">Find me @ </div>
       <SocialLink
         title="Resume (PDF)"
         url={Resume}
