@@ -4,7 +4,7 @@
 }
 
 .experience-company {
-  color: var(--powder-blue-text);
+  color: var(--mauve);
   font-size: 1.25em;
   padding-bottom: 0.3em;
 }
@@ -54,10 +54,11 @@
   flex-grow: 1;
   align-self: flex-end;
   text-align: right;
+  color: var(--blue-text);
 }
 
 .experience-technologies {
-  background-color: var(--mauve-bg-reduced-3);
+  background-color: var(--gold-bg-reduced);
   text-align: right;
   width: 25em;
 }
@@ -85,7 +86,7 @@
 }
 
 .toggle-arrow {
-  color: var(--mauve-bg-reduced-1);
+  color: var(--blue-text);
 }
 
 .toggle-arrow.expanded {
