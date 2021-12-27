@@ -1,5 +1,5 @@
 import SocialLink from "./SocialLink";
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/documents/Resume.pdf";
 
 import "./Sidebar.css";
 

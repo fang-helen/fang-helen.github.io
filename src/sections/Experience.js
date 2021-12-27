@@ -1,5 +1,5 @@
 import Section from "../components/Section";
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/documents/Resume.pdf";
 
 import ExperienceTile from "../components/ExperienceTile";
 

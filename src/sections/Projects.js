@@ -10,9 +10,10 @@ function Projects() {
       title="My Projects"
       children={
         <div id="projects-container">
-          <ProjectTile />
-          <ProjectTile />
-          <ProjectTile />
+          <ProjectTile title="Polymesh Subdivider" />
+          <ProjectTile title="PintOS" />
+          <ProjectTile title="UniteBySTEP" />
+          <ProjectTile title="Hingle Basin" />
         </div>
       }
     />
