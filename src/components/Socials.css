@@ -2,6 +2,7 @@
   line-height: 1;
   font-size: 1.5em;
   margin: 0.25em 0.1em;
+  z-index: 2;
 }
 
 .social-link {
