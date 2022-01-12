@@ -22,11 +22,13 @@ function Experience() {
             dates="Aug 2021 - Nov 2021"
             summary="Built out a new feature from end‑to‑end to set custom product
               cover images in creator collections on Instagram Shops."
+            // https://techcrunch.com/2021/10/22/instagram-rolls-out-new-tools-for-creators-to-collaborate-and-partner-with-brands/
             technologies={["Hack/PHP", "Python Django"]}
             details={[
               "Created a new database schema to support the feature and collaborated with other engineers, " +
                 "both within and outside immediate team, to integrate it with other Shops backend infrastructure.",
-              "Implemented full frontend flow by adding UI elements and async controllers using Bloks, a server‑side rendering framework.",
+              "Implemented full frontend flow by adding UI elements and async controllers using Bloks, a server‑side " +
+                "rendering framework.",
               "Adapted a Django endpoint to more flexibly query product media.",
             ]}
           />

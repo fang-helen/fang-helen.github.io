@@ -1,10 +1,72 @@
 .project-tile-square {
-  background-color: var(--mauve-bg-reduced-2);
-  width: 20em;
-  padding-bottom: 20em;
+  width: 24em;
+  padding-bottom: 24em;
   margin: 1em;
+  position: relative;
+  overflow: hidden;
 }
 
-.project-tile {
+.project-image {
+  height: 100%;
   position: absolute;
+}
+
+.project-tile-overlay {
+  object-fit: contain;
+  align-items: center;
+  position: absolute;
+  flex-flow: column nowrap;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  text-align: center;
+  transition: margin-top 0.5s ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.project-tile-square:hover > .project-tile-overlay {
+  margin-top: 100%;
+}
+
+.project-tile-contents {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+  z-index: 1;
+}
+
+.project-tile-contents li {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+.project-overlay-text {
+  z-index: 3;
+  width: 100%;
+  color: white;
+  background-color: var(--dark-blue-reduced);
+  box-shadow: 0px 0px 10px var(--brown-text);
+  padding: 0.6em 0;
+}
+
+.project-title {
+  font-size: 1.2em;
+}
+
+.project-subtitle {
+  font-size: 0.8em;
+}
+
+.project-link-container {
+  width: 100%;
+  text-align: center;
+}
+
+.project-link {
+  color: var(--mauve);
+  font-size: 1.3em;
 }
