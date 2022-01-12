@@ -35,13 +35,17 @@ class ProjectTile extends React.Component {
               <a
                 class="project-link"
                 href={this.state.link}
-                title={this.state.title}
+                title={this.state.title + " - GitHub"}
                 target="_blank"
                 rel="noreferrer"
               >
                 <i class="fab fa-github"></i>
               </a>
-            ) : null}
+            ) : (
+              <div class="project-request-code">
+                Code available upon request!
+              </div>
+            )}
           </div>
         </div>
       </div>
