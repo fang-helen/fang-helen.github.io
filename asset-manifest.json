@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.2706d8ef.chunk.css",
-    "main.js": "/static/js/main.a770aaac.chunk.js",
-    "main.js.map": "/static/js/main.a770aaac.chunk.js.map",
+    "main.js": "/static/js/main.6380fa04.chunk.js",
+    "main.js.map": "/static/js/main.6380fa04.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4ea985f1.js",
     "runtime-main.js.map": "/static/js/runtime-main.4ea985f1.js.map",
     "static/js/2.cf832b26.chunk.js": "/static/js/2.cf832b26.chunk.js",
@@ -14,6 +14,7 @@
     "static/js/2.cf832b26.chunk.js.LICENSE.txt": "/static/js/2.cf832b26.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/Quicksand-Regular.cffc2790.ttf",
     "static/media/Resume.cdc79172.pdf": "/static/media/Resume.cdc79172.pdf",
+    "static/media/gerrymap.3ac8a298.png": "/static/media/gerrymap.3ac8a298.png",
     "static/media/hinglebasin.6e37c9df.PNG": "/static/media/hinglebasin.6e37c9df.PNG",
     "static/media/nyc_cropped.768388e8.png": "/static/media/nyc_cropped.768388e8.png",
     "static/media/polymesh.0e3f165a.PNG": "/static/media/polymesh.0e3f165a.PNG",
@@ -23,6 +24,6 @@
     "static/js/runtime-main.4ea985f1.js",
     "static/js/2.cf832b26.chunk.js",
     "static/css/main.2706d8ef.chunk.css",
-    "static/js/main.a770aaac.chunk.js"
+    "static/js/main.6380fa04.chunk.js"
   ]
 }
