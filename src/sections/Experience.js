@@ -50,13 +50,13 @@ function Experience() {
           <ExperienceTile
             company="UT Department of Computer Science"
             title="Undergraduate Teaching Assistant"
-            dates="Jan 2021 - May 2021"
+            dates="Jan 2021 - May 2022"
             summary="Worked as teaching assistant for CS313E, a data structures and algorithms course taught in Python."
             technologies={["Python"]}
             details={[
-              "Wrote unit test cases and autograding scripts for student assignments and exams.",
-              "Held triweekly office hours to help students debug code.",
-              "Frequently interacted with students on Piazza to discuss concepts and answer questions, totaling 889 contributions over the semester.",
+              "Wrote test cases and autograding scripts for student assignments and exams, as well as designed exam questions.",
+              "Held biweekly office hours to help students debug code.",
+              "Frequently interacted with students on Piazza to discuss concepts and answer questions.",
             ]}
           />
           <ExperienceTile

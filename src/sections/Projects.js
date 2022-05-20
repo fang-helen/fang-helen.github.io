@@ -5,6 +5,7 @@ import hinglebasin from "../assets/images/hinglebasin.PNG";
 import pintos from "../assets/images/pintos.png";
 import polymesh from "../assets/images/polymesh.PNG";
 import unitebystep from "../assets/images/uniteLogo.png";
+import gerrymap from "../assets/images/gerrymap.png";
 
 import "./Projects.css";
 
@@ -15,6 +16,18 @@ function Projects() {
       title="My Projects"
       children={
         <div id="projects-container">
+          <ProjectTile
+            title="GerryMap"
+            subtitle="Full-stack web application"
+            bullets={[
+              "Created a website to visualize gerrymandering and consolidate information about US states, congressional districts, and House representatives.",
+              "Built frontend using React, and created a RESTful API for the backend using Flask and MySQL that supports dynamic sorting, filtering, searching, and pagination of database models.",
+              "Leveraged AWS Amplify, Elastic Beanstalk, and RDS to host and deploy the website, and leveraged GitLab CI/CD to set up automated testing and deployment pipelines.",
+            ]}
+            link="https://gitlab.com/alex.chandler/GerryMap/-/tree/main"
+            visit="www.gerrymap.com"
+            image={gerrymap}
+          />
           <ProjectTile
             title="Polymesh Subdivider"
             subtitle="Computer graphics capstone project"

@@ -11,6 +11,7 @@ class ProjectTile extends React.Component {
       bullets: props.bullets,
       link: props.link,
       image: props.image,
+      visit: props.visit,
     };
   }
 
@@ -45,6 +46,17 @@ class ProjectTile extends React.Component {
               <div class="project-request-code">
                 Code available upon request!
               </div>
+            )}
+            {this.state.visit && (
+              <a
+                class="project-link"
+                href={this.state.visit}
+                title={this.state.title + " - Visit"}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa fa-link" aria-hidden="true"></i>
+              </a>
             )}
           </div>
         </div>
