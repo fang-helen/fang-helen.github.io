@@ -20,8 +20,8 @@ function Experience() {
             company="Jane Street"
             title="SWE Intern"
             dates="May 2022 - Aug 2022"
-            summary="Worked a tool to infer metadata for datasets used for trading and research on the Research Infra team
-              and added features to Webs3, an internal tool used widely by trading desks across the firm, on the International
+            summary="Worked a tool to infer metadata for datasets used for trading and research while on the Research Infra team
+              and added features to Webs3, an internal tool used widely by trading desks across the firm, while on the International
               ETFs trading desk."
             technologies={["OCaml"]}
             details={[
