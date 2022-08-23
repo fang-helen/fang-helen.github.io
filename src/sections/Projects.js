@@ -25,7 +25,7 @@ function Projects() {
               "Leveraged AWS Amplify, Elastic Beanstalk, and RDS to host and deploy the website, and leveraged GitLab CI/CD to set up automated testing and deployment pipelines.",
             ]}
             link="https://gitlab.com/alex.chandler/GerryMap/-/tree/main"
-            visit="www.gerrymap.com"
+            visit="https://www.gerrymap.com"
             image={gerrymap}
           />
           <ProjectTile
