@@ -20,20 +20,19 @@ function Experience() {
             company="Jane Street"
             title="SWE Intern"
             dates="May 2022 - Aug 2022"
-            summary="Worked a tool to infer metadata for datasets used for trading and research while on the Research Infra team
-              and added features to Webs3, an internal tool used widely by trading desks across the firm, while on the International
+            summary="Worked on a tool to infer metadata for datasets used for trading and research while on the Research Infra team;
+              expanded scripting and logging for a tool used widely by trading desks across the firm while on the International
               ETFs trading desk."
             technologies={["OCaml"]}
             details={[
               "Implemented an RPC protocol and command-line interface for inferring column schemas and other metadata " +
                 "for .csv and .parquet datasets and Postgres databases, streamlining data ingestion. (Research Infra)",
-              "Extended syntax for Webs3 user-defined modules to enable flagging functions and variables for logging. " +
-                "Created a micro-service to poll for updates in logging config files and display this on the UI. (International ETFs)",
-              "Added syntax highlighting to editing windows on the Webs3 web interface using CodeMirror. (International ETFs)",
+              "Extended scripting syntax, expanded logging support, and added syntax highlighting to an internal tool used " +
+                "widely by trading desks across the firm  (International ETFs)",
             ]}
           />
           <ExperienceTile
-            company="Meta (Facebook)"
+            company="Meta"
             title="SWE Intern"
             dates="Aug 2021 - Nov 2021"
             summary="Built out a new feature from end‑to‑end to set custom product
